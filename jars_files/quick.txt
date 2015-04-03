@@ -1,0 +1,222 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
+
+/**
+   The quickapp is an applet using quick sort algorithms.
+*/
+
+public class quicksort extends Applet
+{
+   private Panel Panel1;          // To hold a text field
+   private Panel Panel2;          // To hold a text field
+   private Panel Panel3;          // To hold a text field
+   private Panel Panel4;          // To hold a text field
+   private Panel Panel5;
+   private Panel buttonPanel;     // To hold a button
+   private TextField INPUT;  			
+   private TextField N_OF_ELEMENTS;    
+   private TextField RESULTS;
+   /**
+      init method
+   */
+
+   public void init()
+   {
+      // Build the panels.
+      buildpanel1(); buildpanel5();
+      buildpanel2(); buildpanel3();
+      buildpanel4();
+      buildButtonPanel();
+
+      // Create a layout manager.
+      setLayout(new GridLayout(6, 1));
+
+      // Add the panels to the applet.
+      add(Panel1);
+      add(Panel2);
+      add(Panel3); 
+      add(buttonPanel);
+      add(Panel4);  
+      add(Panel5);  
+    
+   }
+
+   /**
+      The buildpanel1 method 
+   */
+
+   private void buildpanel1()
+   {
+      // Create the panel.
+      Panel1 = new Panel();
+
+      // Create a label to display a message.
+      Label message1 = new Label("QUICK SORT PROGRAM");
+
+      // Create a layout manager for the panel.
+      Panel1.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel1.add(message1);
+
+   }
+
+	private void buildpanel5()
+	 {
+		    Panel5= new Panel();
+		    Label message5 = new Label("Created by A. Tiffany Valens 4/21/2014");
+		    Panel5.setLayout(new FlowLayout(FlowLayout.CENTER));
+		    Panel5.add(message5);
+	 }
+
+   private void buildpanel2()
+   {
+      // Create the panel.
+      Panel2= new Panel();
+
+      // Create a label to display a message.
+      Label message2 = new Label("Please Enter THE No. OF ELEMENTS you want to sort:\t");
+		
+      N_OF_ELEMENTS = new TextField(40);
+     
+      // Create a layout manager for the panel.
+      Panel2.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel2.add(message2);
+      Panel2.add(N_OF_ELEMENTS);
+   }
+
+   private void buildpanel3()
+   {
+      // Create the panel.
+      Panel3 = new Panel();
+
+      // Create a label to display a message.
+      Label message3 = new Label("Now, Please Enter the numbers to sort:");
+
+      INPUT = new TextField(40);
+
+      // Create a layout manager for the panel.
+      Panel3.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel3.add(message3);
+      Panel3.add(INPUT);
+   }
+   
+   private void buildpanel4()
+   {
+      // Create the panel.
+      Panel4 = new Panel();
+
+      // Create a label to display a message.
+      Label message2 = new Label("The sorted list (using QUICK SORT) will be \t");
+
+      RESULTS = new TextField(40);
+
+      // Make the text field read-only.
+      RESULTS.setEditable(false);
+
+      // Create a layout manager for the panel.
+      Panel4.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel4.add(message2);
+      Panel4.add(RESULTS);
+   }
+   /**
+      The buildButtonPanel method 
+   */
+
+
+   private void buildButtonPanel()
+   {
+      // Create the panel.
+      buttonPanel = new Panel();
+
+      // Create a button with the text "Calculate".
+      Button convButton = new Button("Calculate");
+
+      // Add an action listener to the button.
+      convButton.addActionListener(new ButtonListener());
+
+      // Add the button to the panel.
+      buttonPanel.add(convButton);
+   }
+
+   /**
+      Private inner class that handles the action event
+      that is generated when the user clicks the convert
+      button.
+   */
+
+   private class ButtonListener implements ActionListener
+   {
+      public void actionPerformed(ActionEvent e)
+      {
+        int n = Integer.parseInt(N_OF_ELEMENTS.getText()); 
+        String[] vals = (INPUT.getText()).split("\\s+"); // split the string by whitespaces accepts regex. 
+        
+        int[] temp= new int[n]; 
+     	for(int a=0; a<n; a++)	{
+     		temp[a] = Integer.parseInt(vals[a]);	
+     	}
+     	
+        quickSort(temp, 0, temp.length - 1);		// choose a pivot of the middle of the array
+     	
+     	//Print array after sorting using quick sort algorithm       
+         String displayMessage = " ";
+         for(int i=0;		i<temp.length;		i++)	{
+      		displayMessage += temp[i] + " ";	
+      	}
+      	
+         
+         RESULTS.setText(displayMessage);
+      }
+   }
+   
+
+	   void quickSort(int[] a, int p, int r)
+	    {
+	        if(p<r)
+	        {
+	            int q = partition(a, p, r);
+	            quickSort(a, p, q);
+	            quickSort(a, q+1, r);
+	        }
+	    }
+
+	   
+	     int partition(int[] a, int p, int r) {
+
+	        int x = a[p];
+	        int i = p-1 ;
+	        int j = r+1 ;
+
+	        while (true) {
+	        	
+	        	do {
+	        		i++;
+	        	} while (i < r && a[i] < x);
+	        	
+	        	do {
+	        		j--;
+	        	} while (j > p && a[j] > x);
+
+	            if (i < j)
+	                swap(a, i, j);
+	            else
+	                return j;
+	        }
+	     }
+
+	    void swap(int[] a, int i, int j) {
+	        // TODO Auto-generated method stub
+	        int temp = a[i];
+	        a[i] = a[j];
+	        a[j] = temp;
+	    }
+}
+

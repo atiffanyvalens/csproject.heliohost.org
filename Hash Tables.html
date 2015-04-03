@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hash Tables
+		</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		
+		<!-- Start css3menu.com  -->
+
+		<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+		<!-- End css3menu.com  -->
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+				
+			<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+										<nav class="horizontal">
+										<ul> 
+										<li style = "float: left; text-align: left; margin: 5px; width: 14%; display: inline; width: 400px; ">
+										<h2> Hash Tables </h2> </li>
+										
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold; border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Array List.html">Array List</a></li>
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Linked Lists.html">Linked Lists</a></li>	
+										
+						
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Stacks.html">Stacks</a></li>	
+								                <li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Queues.html">Queues</a></li>  
+										
+										
+								       		</ul>
+										</nav> </br> </br>
+										
+										</header>
+										
+										<p> <font size="4px" face="Calibri">  
+								
+											<font style="font-weight: bold; display:inline;">Using and implementing hash tables</font></br></br>
+											
+											public HashMap &lt; Integer, Student &gt; buildMap(Student[] students) {
+											<div style ="margin-left: 2em; font-size: 18px;">
+											HashMap &lt;Integer, Student&gt; map = new HashMap&lt;Integer, Student&gt;(); </br>
+											for (Student s : students) map.put(s.getId(), s); </br>
+											return map; </div>
+											}</br></br>
+											
+											<font style="font-weight: bold; display:inline;">Compare and contrast Hash Table vs. STL map</font></br></br>
+											In a hash table, a value is stored by applying the hash function on a key. Thus, values are not sorted in the table.
+											Hash tables use the key to find the index that will store the value, an insert/lookup can be done in amortised O(1) 
+											time, assuming only a few collisions in the hashtable. One must also handle potential collisions in a hashtable.
+											
+											In an STL map, insertion of a pair of key and value is sorted in order of key. It uses a tree to store values, 
+											which is why an O(log N) insert/lookup is required. There is also no need to handle collisions. An STL map works well for things like:
+											</br>
+											»» &nbsp;&nbsp; find min element </br>
+											»» &nbsp;&nbsp; find max element </br>
+											»» &nbsp;&nbsp; print elements in sorted order </br>
+											»» &nbsp;&nbsp; find the exact element or, if the element is not found, find the next smallest number </br></br>
+											
+											<font style="font-style: italic; display:inline;">How is a hash table implemented?</font></br></br>
+											1. A good hash function is required (e.g.: operation % prime number) to ensure that the hash values are uniformly distributed. </br>
+											2. Avoiding collision would need: chaining (good for dense table entries), probing (good for sparse table entries), etc. </br>
+											3. Implement methods to dynamically increase or decrease the hash table size on a given criterion. For example, when 
+											the ratio of number of elements and table size is greater than the fixed threshold, increase the hash table 
+											size by creating a new hash table and transfer the entries from the old table to the new table by computing the index 
+											using new hash function.</br></br>
+											
+											<font style="font-style: italic; display:inline;">What can be used instead of a hash table, if the number of inputs is small?</font></br></br>
+											You can use an STL map. Although this takes O(log n) time, since the number of inputs is small, this time is negligible.</br></br>
+											
+												
+											Source: <div style="font-weight: bold; display: inline;">Cracking the Coding Interview, Gayle Laakmann </br></br>
+											</div>
+										
+											
+											<div align="center">
+											The following video shows how to use and implement Hash Tables in Java programming language. </div></br>
+											<div align="center">
+											<iframe width="560" height="349" src="https://www.youtube.com/embed/KKjyoLrjZ7M?"
+											frameborder="0" allowfullscreen="0"></iframe>
+											</div>
+									</p>
+									<p><div align = "center"><a href="#"> <img src ="images/t2.png"/> </a></div></p>		
+									
+									<br>
+									<br>
+									
+									</section>
+									
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+			</div>
+
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+	</body>
+</html>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+<!-- 
+   New Perspectives on JavaScript, 2nd Edition
+   Tutorial 2
+   Review Assignment
+
+   Events in Tulsa
+   Author: Tiffany
+   Date:   10/20/2013
+
+   Filename:         events.htm
+   Supporting files: dates.js, logo.jpg, tulsa.css
+-->
+
+   <title>Upcoming Events</title>
+   <script src="jquery-1.10.2.min.js"></script>
+  
+   <script type ="text/javascript" src="dates2.js" ></script>
+   
+   <script type ="text/javascript" src="change.js" ></script>
+   
+   <link rel="stylesheet" href="tulsa2.css" />
+   <script type="text/javascript">
+   
+		function showCountdown() {
+		
+		var today = new Date();		//First use this: "April 4, 2011 10:35:22"
+		var Date1 = new Date("Apr 13 2013 10:00:00"); // Apr 13 at 10:00 a.m.
+		var Date2 = new Date("Apr 18, 2013 10:00:00"); // Apr 18 at 10:00 a.m.
+		var Date3 = new Date("Apr 20, 2013 10:00:00"); // Apr 20 at 10:00 a.m.
+		var Date4 = new Date("May 21, 2013 12:00:00"); // May 21 at 12:00 p.m.
+		var Date5 = new Date("May 26, 2013 8:00:00"); // May 26 at 8:00 a.m.
+		var Date6 = new Date("Jun 8, 2013 8:00:00"); // Jun 8 at 8:00 a.m.
+		var Date7 = new Date("Jun 12, 2013 13:00:00"); // Jun 12 at 1:00 p.m.
+		var Date8 = new Date("Jul 4, 2013 21:00:00"); // Jul 4 at 9:00 p.m.
+		var Date9 = new Date("Jul 13, 2013 8:00:00"); // Jul 13 at 8:00 a.m.
+		var Date10= new Date("Sep 1, 2013 8:00:00"); // Sep 1 at 8:00 a.m.
+		var Date11 = new Date("Nov 11, 2013 8:00:00"); // Nov 11 at 8:00 a.m.
+		var Date12 = new Date("Nov 27, 2013 8:00:00"); // Nov 27 at 8:00 a.m.
+		var Date13 = new Date("Dec 1, 2013 11:30:00"); // Dec 1 at 11:30 a.m.
+		var Date14 = new Date("Dec 31, 2013 15:30:00"); // Dec 31 at 3:30 p.m.
+		
+		//Show today's date. 
+		document.eventform.thisDay.value = showDateTime(today);
+		
+		//Change each holiday's year to next year if it is less than today's date.
+		changeYear(today, Date1);
+		changeYear(today, Date2);
+		changeYear(today, Date3);
+		changeYear(today, Date4);
+		changeYear(today, Date5);
+		changeYear(today, Date6);
+		changeYear(today, Date7);
+		changeYear(today, Date8);
+		changeYear(today, Date9);
+		changeYear(today, Date10);
+		changeYear(today, Date11);
+		changeYear(today, Date12);
+		changeYear(today, Date13);
+		changeYear(today, Date14);
+		
+		//calculate the time difference for each holiday's date (Date 1, 2, ..etc) and today's date and put the answer to each input box's name.
+		document.eventform.count1.value = countdown(today, Date1);
+		document.eventform.count2.value = countdown(today, Date2);
+		document.eventform.count3.value = countdown(today, Date3);
+		document.eventform.count4.value = countdown(today, Date4);
+		document.eventform.count5.value = countdown(today, Date5);
+		document.eventform.count6.value = countdown(today, Date6);	
+		document.eventform.count7.value = countdown(today, Date7);
+		document.eventform.count8.value = countdown(today, Date8);
+		document.eventform.count9.value = countdown(today, Date9);
+		document.eventform.count10.value = countdown(today, Date10);
+		document.eventform.count11.value = countdown(today, Date11);
+		document.eventform.count12.value = countdown(today, Date12);
+		document.eventform.count13.value = countdown(today, Date13);
+		document.eventform.count14.value = countdown(today, Date14);
+		}
+   </script>
+
+</head>
+
+<body onload ="setInterval('showCountdown()',100)"> <!--Every 1/10 s is 100 ms.-->
+<form name="eventform" id="eventform" action="">
+
+
+<div id="main">
+
+<table>
+<tr>
+   <th colspan="2" style="text-align: right">Current Date and Time</th>
+   <td><input name="thisDay" id="thisDay" readonly="readonly" size="34"  style="text-align: center; font-size: 16px"/></td>
+</tr>
+<tr>
+   <th>Event</th>
+   <th>Starting Time</th>
+   <th>Countdown to Event</th>
+</tr>
+<tr>
+   <td><input value="Palm Sunday Christian" readonly="readonly" size="20" /></td>
+   <td><input value="Apr 13 at 10:00 a.m." readonly="readonly" size="20" style="text-align: center" /></td><!--Display the holiday's date-->
+   <td><input name="count1" id="count1" size="34" style="text-align: center"/></td>
+</tr>
+
+<tr>
+   <td><input value="Good Friday" readonly="readonly" size="20" /></td>
+   <td><input value="Apr 18 at 10:00 a.m." readonly="readonly" size="20" style="text-align: center" /></td><!--Display the holiday's date-->
+   <td><input name="count2" id="count2" size="34" style="text-align: center"  /></td>
+</tr>
+<tr>
+   <td><input value="Easter Sunday" readonly="readonly" size="20" /></td>
+   <td><input value="Apr 20 at 10:00 a.m." readonly="readonly" size="20" style="text-align: center" /></td><!--Display the holiday's date-->
+   <td><input name="count3" id="count3" size="34" style="text-align: center" /></td>
+</tr>
+<tr>
+   <td><input value="Spring Day Rally" readonly="readonly" size="20" /></td>
+   <td><input value="May 21 at 12:00 p.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count4" id="count4" size="34" style="text-align: center" /></td>
+</tr>
+<tr>
+   <td><input value="Memorial Day" readonly="readonly" size="20" /></td>
+   <td><input value="May 26 at 8:00 a.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count5" id="count5" size="34" style="text-align: center" /></td>
+</tr>
+
+<tr>
+   <td><input value="Pentecost Christian" readonly="readonly" size="20" /></td>
+   <td><input value="Jun 8 at 8:00 a.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count6" id="count6" size="34" style="text-align: center" /></td>
+</tr>
+
+<tr>
+   <td><input value="World Cup Begins" readonly="readonly" size="20" /></td>
+   <td><input value="Jun 12 at 1:00 p.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count7" id="count7" size="34" style="text-align: center" /></td>
+</tr>
+<tr>
+   <td><input value="July 4th Fireworks" readonly="readonly" size="20" /></td>
+   <td><input value="Jul 4 at 9:00 p.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count8" id="count8" size="34" style="text-align: center" /></td>
+</tr>
+<tr>
+   <td><input value="Final Match of World Cup" readonly="readonly" size="20" /></td>
+   <td><input value="Jul 13 at 8:00 a.m." readonly="readonly" size="20" style="text-align: center"/></td>
+   <td><input name="count9" id="count9" size="34" style="text-align: center" /></td>
+</tr>
+
+<tr>
+   <td><input value="Labor Day" readonly="readonly" size="20" /></td>
+   <td><input value="Sep 1 at 8:00 a.m." readonly="readonly" size="20" style="text-align: center"/></td>
+   <td><input name="count10" id="count10" size="34" style="text-align: center" /></td>
+</tr>
+
+<tr>
+   <td><input value="Veterans Day" readonly="readonly" size="20" /></td>
+   <td><input value="Nov 11 at 8:00 a.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count11" id="count11" size="34" style="text-align: center" /></td>
+</tr>
+<tr>
+   <td><input value="Thanksgiving Day" readonly="readonly" size="20" /></td>
+   <td><input value="Nov 27 at 8:00 a.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count12" id="count12" size="34" style="text-align: center" /></td>
+</tr>
+<tr>
+   <td><input value="Holiday Party" readonly="readonly" size="20" /></td>
+   <td><input value="Dec 1 at 11:30 a.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count13" id="count13" size="34" style="text-align: center" /></td>
+</tr>
+<tr>
+   <td><input value="New Year's Bash" readonly="readonly" size="20" /></td>
+   <td><input value="Dec 31 at 3:30 p.m." readonly="readonly" size="20" style="text-align: center" /></td>
+   <td><input name="count14" id="count14" size="34" style="text-align: center" /></td>
+</tr>
+</table>
+</div>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Selection Sorting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	
+	<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+	
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+					<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Selection Sort</h2>
+										
+										</header>
+										
+										<p> <font size="4px">  
+							
+											The purpose of sorting is to arrange data from lowest value to highest or vice versa.
+											To understand selection sorting, assume that the items would be arranged
+											from the lowest value on the left side to the highest value on the right.
+											Take an example of a five element array with numbers from 1 to 5.</br>
+											<div align ="left" style="margin: 30px;">
+											The data are in this order: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+											5, 3, 2, 4, 1.</br>
+											The end result that we would look for should be: 	 &nbsp;&nbsp;&nbsp; 1, 2, 3, 4, 5.</br>
+											</div></br>
+											
+											Selection Sort works as follows: first find the smallest in the array and exchange it with the element in 
+											the first position, then find the second smallest element and exchange it with the element in the second position, 
+											and continue in this way until the entire array is sorted. 
+											 
+											For example, using the array above, shown with array elements in sequence separated by commas:</br>
+											<div align="center"> <font style="font-weight:bold; color: #6495ED;">5</font>, 3, 2, 4, <font style="font-weight:bold; color: #6495ED;">1</font>.</br></div>
+					
+											</br>
+											The leftmost element is at index zero, and the rightmost element is at the highest array index, in our case, 
+											4 (the effective size of our array is 5). The smallest element in this effective array (index 0-4) is at index 4. 
+											We have shown <font style="font-weight:bold; color: #6495ED;">the smallest element and the one at the lowest index</font> in bold. 
+											We then <font style="font-weight:bold; color: #6495ED">swap</font> the element at index 0 
+											with that at index 4. The result is:</br>
+											<div align="center">1,<font style="font-weight:bold; color: #6495ED">3</font>,<font style="font-weight:bold; color: #6495ED;">2</font>, 4, 5.</div></br>
+											
+											</br>
+											The first element in the array, 1, is already sorted. The effective size of the above array is reduced to 4, and the first element 
+											on the most left side will not be included in the next iteration, making the highest index in the effective array now 3. 
+											The smallest element in this effective array (index 0-3) is 2 at index 1, so we <font style="font-weight:bold;color: #6495ED;">
+											swap</font> elements at index 1 and 0 (in bold) and the array becomes:
+											
+											<div align="center">1, 2, <font style="font-weight:bold; color: #6495ED;">3</font>, 4, 5.</div></br>
+
+											Before continuing to next iteration, we realize that the list of numbers is sorted and the Selection Sort algorithm is complete.
+											</br>
+											Properties of selection sort are: &nbsp;
+											Not stable, O(1) extra space, Θ(n2) comparisons, Θ(n) swaps, Not adaptive.</br>
+											
+											</br>A wonderful <a href = "http://www.ee.ryerson.ca/~courses/coe428/sorting/heapsort.html" target="_blank">link</a>
+											from another website could also help to illustrate how Selection Sort works, as 
+											shown below: 
+											
+											<div align="center">
+											<iframe width="830" height="624" align="middle" style="margin-top:35px; margin-bottom: 30px;"
+											src="http://www.ee.ryerson.ca/~courses/coe428/sorting/selectionsort.html" frameborder="1" scrolling="no"></iframe></div>
+											</br>
+											<font size = "6px"><div align="center" style="margin-top:10px">Selection Sort Algorithm</div></font>
+											</br>
+
+											
+										</p>
+										<p style ="margin-left:5em"> 
+										<font size="4.6px" face="Arial"> 
+											public class selectionsort&nbsp;{
+											<div style = "margin-left: 7em"> <!---->
+											static void selectionSort ( Object[] data) {</br>
+		
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int i,j,least;</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for (i = 0;	 i < data.length-1;		i++) {</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	for (j = i+1, least = i;	 j < data.length;	 j++) {
+											
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+													if (((Comparable) data[j]).compareTo (data[least]) < 0)
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														least = j;
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+													if (i != least)
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														swap(data, least, i);
+													
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													}
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													}
+													</br>
+													} </br></br>
+										
+											
+											static void swap ( Object[] a, int e1, int e2) { </br>
+												&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Object tmp = a[e1]; </br>
+												&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a[e1] = a[e2]; 		</br>
+												&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a[e2] = tmp;		</br>
+											}
+											</div>
+											<div style = "margin-left: 6.9em">}
+											</div>
+										</font>
+										</p>
+											
+
+										<p>
+													
+										This applet needs Java plugin to run. You can install it by clicking the following link. <a href = "http://www.java.com/en/download/index.jsp" target="_blank">
+										Download the Java Runtime Environment</a>.
+
+										<div align="center">
+										<applet code="selectionapp.class" archive="jars_files/selectionapp.jar"
+										width="800" height="650">
+										</applet></div>
+										The complete code for this app is <a href="jars_files/selection.txt" target="_blank">here.</a>
+										</p>
+										
+										<p><font size="4px">Also, see <a href="Bubble Sort.html" style="color:purple">Bubble Sort</a></font>
+										<font size="4px"><a href="Merge Sort.html" style="color:purple">Merge Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Shell Sort.html" style="color:purple">Shell Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Heap Sort.html" style="color:purple">Heap Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Insertion Sort.html" style="color:purple">Insertion Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Quick Sort.html" style="color:purple">Quick Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Radix Sort.html" style="color:purple">Radix Sort</a>&nbsp;.</font>
+										</p>
+										<p><font size="4px"><a href="#" style="color:brown"> Back to Top </a></font>
+										</p>
+									
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+		<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+	</body>
+</html>

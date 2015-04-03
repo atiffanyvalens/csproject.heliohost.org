@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Heap Sorting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+	
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+					<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Heap Sort</h2>
+										
+										</header>
+										
+										<p> <font size="4px">  
+											
+											>> The heap data structure is an array object which can be easily visualized as a complete binary tree.</br>
+											>> There is a one to one correspondence between elements of the array and nodes of the tree. </br>
+											>> The tree is completely filled on all levels except possibly the lowest, which is filled from the left up to a point. </br>
+											>> All nodes of heap also satisfy the relation that the key value at each node is at least as large as the value at its
+											children. </br></br>
+
+											Step I: The user inputs the size of the heap (within a specified limit). The program generates a corresponding binary tree 
+											with nodes having randomly generated key Values. </br></br>
+
+											Step II: Build Heap Operation: Let n be the number of nodes in the tree and i be the key of a tree. For this, the program 
+											uses operation Heapify. When Heapify is called both the left and right subtree of the i are Heaps. The function of Heapify is
+											to let i settle down to a position (by swapping itself with the larger of its children, whenever the heap property 
+											is not satisfied) till the heap property is satisfied in the tree which was rooted at (i). </br></br>
+
+											Step III: Remove maximum element: The program removes the largest element of the heap (the root) by swapping it with 
+											the last element. </br></br>
+
+											Step IV: The program executes Heapify (new root) so that the resulting tree satisfies the heap property. </br></br>
+
+											Step V: Go to step III till heap is empty </br></br>
+											
+											A wonderful <a href = "http://www.ee.ryerson.ca/~courses/coe428/sorting/heapsort.html" target="_blank">link</a>
+											from another website could also help to illustrate how Heap Sort works, as 
+											shown below. To begin the animation, just click Play: 
+											
+											<div align="center">
+											<iframe width="830" height="624" align="middle" style="margin-top:35px; margin-bottom: 30px;"
+											src="http://www.ee.ryerson.ca/~courses/coe428/sorting/heapsort.html" frameborder="1" scrolling="no"></iframe></div>
+											</br>
+											<font size = "6px"><div align="center" style="margin-top:5px">Heap Sort Algorithm</div></font>
+											</br>
+											
+										</p>
+										<p style ="margin-left:5em"> 
+										<font size="4.8px" face="Arial">  	
+											public class heapsort { </br></br> 
+
+											static void heapsort(Object[] data) { </br></br>
+												
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (int i = data.length/2 - 1;	i >= 0; --i) </br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; moveDown(data,i,data.length-1);	</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (int i = data.length-1; i >= 1;  --i) {	</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; swap(data,0,i);	</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; moveDown(data,0,i-1); </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }											</br>
+											}</br></br>
+											
+											public static void swap(Object[] a, int e1, int e2)	{ </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Object tmp = a[e1]; a[e1] = a[e2]; a[e2] = tmp;	</br>
+											} </br>
+											private static void moveDown(Object[] data, int first, int last) { </br></br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 	
+												int largest = 2*first + 1;	</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+												while (largest <= last) {	</br>
+												&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													if (largest < last && // first has two children </br>
+												&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													// (at 2*first+1 and 2*first+2) </br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														((Comparable)data[largest]).compareTo(data[largest+1]) < 0)				</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+															largest++;															</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													if (((Comparable)data[first]).compareTo(data[largest]) < 0) {  				</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														 swap(data,first,largest);       // if necessary, swap values			</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														 first = largest;                // and move down;						</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														 largest = 2*first + 1;													</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													}																			</br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													else </br> 
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													largest = last + 1; // to exit the loop: </br>
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													// the heap property isn't violated by data[first] </br>
+												</br>
+												&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+												}  </br> } </br> }
+											</p>
+
+										
+									
+											</font>
+										</p>
+										<p>
+													
+										This applet needs Java plugin to run. You can install it by clicking the following link. <a href = "http://www.java.com/en/download/index.jsp" target="_blank">
+										Download the Java Runtime Environment</a>.
+
+										<div align="center">
+										<applet code="heapapp.class" archive="jars_files/heapapp.jar"
+										width="800" height="450">
+										</applet></div>
+										The complete code for the app can be found <a href="jars_files/heap.txt" target="_blank">here</a> .
+										</p>
+										
+										<p><font size="4px">Also, see <a href="Bubble Sort.html" style="color:purple">Bubble Sort</a></font>
+										<font size="4px"><a href="Selection Sort.html" style="color:purple">Selection Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Merge Sort.html" style="color:purple">Merge Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Shell Sort.html" style="color:purple">Shell Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Insertion Sort.html" style="color:purple">Insertion Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Quick Sort.html" style="color:purple">Quick Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Radix Sort.html" style="color:purple">Radix Sort</a>&nbsp;.</font>
+										</p>
+										<p><font size="4px"><a href="#" style="color:brown"> Back to Top </a></font>
+										</p>
+									
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+
+	<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+
+	</body>
+</html>

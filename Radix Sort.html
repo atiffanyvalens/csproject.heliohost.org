@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Radix Sorting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		
+		<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+				<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Radix Sort</h2>
+										
+										</header>
+										
+										<p> <font size="4px">  
+											Radix sort is a small method that many people intuitively use when alphabetizing a large list of names. 
+											(Here Radix is 26, 26 letters of alphabet). Specifically, the list of names is first sorted according 
+											to the first letter of each names, that is, the names are arranged in 26 classes. 
+											
+											In sorting other data type such as numbers, one	might want to begin with their most significant digit. But Radix sort do counter-intuitively by 
+											<font style="color: #7B68EE;">sorting on the least significant digits</font> first. On the first pass entire numbers will be arrange on the least
+											significant digit and combined in a array. Then on the second pass, the entire numbers are sorted 
+											<font style="color: #7B68EE;">again on the second least-significant digits</font> and combine in a array and so on. </br></br>
+
+											Following example shows how Radix sort operates on seven 3-digits number.	 </br></br>
+
+											INPUT &nbsp;&nbsp;&nbsp;&nbsp; 1st pass	&nbsp;&nbsp;&nbsp;&nbsp; 2nd pass &nbsp;&nbsp;&nbsp;&nbsp; 	3rd pass - SORTED </br></br>
+											 
+											329	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 720 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 	
+											720&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 	&nbsp;&nbsp;&nbsp;&nbsp; 329 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </br>
+			
+											457	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 355 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  	
+											329	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  355 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </br>
+											
+											657	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 436 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+											436	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 436 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </br>
+											
+											839	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 457 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+											839	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 457 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </br>
+										
+											436	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 657 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 	
+											355	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 657 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </br>
+											
+											720	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 329 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+											457	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 720 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </br>
+
+											355	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 839 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  	
+											657	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 839 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </br>
+ 
+											</br></br>
+											The video below explains thoroughly how Radix Sort works. It is a great tutorial which highlights
+											that Radix Sort is a non-comparative sorting method that seems to magically sort an array of numbers
+											without comparing the value of a member to one another, but by grouping them into bins ranging from 0 to 9, 
+											sorting from their digits of tenthousandth, thousandth, hundredth, and so on, and then rearranging the numbers continuously until the array
+											is sorted.
+											</br></br>
+											
+											<div align="center">
+											<iframe width="560" height="349" src="http://www.youtube.com/embed/dHeTp6hO71U?"
+											frameborder="0" allowfullscreen="0"></iframe>
+											</div>
+											
+											</br></br>
+											<font size = "6px"><div align="center" style="margin-top:5px">Radix Sort Algorithm</div></font>
+											</br>
+										</p>
+										
+										<p style ="margin-left:5em"> 
+										<font size="4.9px" face="Arial">  	
+										 public void radixSort(int[] a){ 
+										 <div style ="margin-left: 7em">
+									         int i, m = a[0], exp = 1, n = a.length; </br>
+									         int[] b = new int[10]; </br></br>
+									
+									       	 for (i = 1; i < n; i++) 
+										 <div style ="margin-left: 2em">
+									           if (a[i] > m)	</br>
+									   	   &nbsp; &nbsp; &nbsp; &nbsp;	m = a[i];
+										 </div></br>
+									         
+									         while (m / exp > 0) { </br></br>
+										   <div style ="margin-left: 2em">
+									           int[] bucket = new int[10];</br></br>
+									
+									           for (i = 0; i < n; i++) </br>
+											&nbsp; &nbsp; &nbsp; &nbsp;
+									               bucket[(a[i] / exp) % 10]++; </br></br>
+									
+									           for (i = 1; i < 10; i++) </br>
+											&nbsp; &nbsp; &nbsp; &nbsp;
+									               bucket[i] += bucket[i - 1];</br></br>
+									
+									           for (i = n - 1; i >= 0; i--)</br>
+											&nbsp; &nbsp; &nbsp; &nbsp;
+									               b[--bucket[(a[i] / exp) % 10]] = a[i];</br></br>
+									
+									           for (i = 0; i < n; i++)</br>
+											&nbsp; &nbsp; &nbsp; &nbsp;
+									               a[i] = b[i]; </br></br>
+									
+									           exp = exp* 10;   </br>      
+										   </div>
+									       	   } </div>
+									   	   <div style = "margin-left: 7em">}</div>
+										</font>
+										</p>
+										<p>
+										</br>
+										This applet needs Java plugin to run. You can install it by clicking the following link. 
+										<a href = "http://www.java.com/en/download/index.jsp" target="_blank">
+										Download the Java Runtime Environment</a>.</br></br>
+
+										<div align="center">
+										<applet code="radixapp.class" archive="jars_files/radixapp.jar"
+										width="800" height="450">
+										</applet></div></br></br>
+										The complete code for this app is <a href="jars_files/radix.txt" target="_blank">here</a>.
+										</p>
+										
+										<p><font size="4px">Also, see <a href="Bubble Sort.html" style="color:purple">Bubble Sort</a></font>
+										<font size="4px"><a href="Selection Sort.html" style="color:purple">Selection Sort</a></font>
+										<font size="4px"><a href="Merge Sort.html" style="color:purple">Merge Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Shell Sort.html" style="color:purple">Shell Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Heap Sort.html" style="color:purple">Heap Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Quick Sort.html" style="color:purple">Quick Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Insertion Sort.html" style="color:purple">Insertion Sort.</a>&nbsp;</font>
+										</p>
+										
+										<p><font size="4px"><a href="#" style="color:brown"> Back to Top </a></font>
+										</p>
+									
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+
+		<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+	</body>
+</html>

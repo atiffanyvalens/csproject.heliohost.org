@@ -1,0 +1,23 @@
+/*
+   New Perspectives on JavaScript, 2nd Edition
+   Tutorial 3
+   Review Assignment
+   Filename: styles.css
+
+   This file contains styles used in the calendar.htm file
+*/
+
+body                 {margin: 0px;}
+#head                {width: 750px; padding: 5px}
+
+#links               {clear: right; width: 750px; padding: 0px}
+#links table         {width: 750px; font-family: Arial, Helvetica, sans-serif;
+                      font-size: 7.5pt; margin: 0px}
+#links table td      {text-align: center; background-color: white;
+                      border: 1px solid black; letter-spacing: 5; padding: 2px}
+#links table a       {text-decoration: none; color: rgb(223,29,29); width: 100%}
+#links table a:hover {color: white; background-color: rgb(223,29,29)}
+
+#main                {text-align: center; padding: 10px}
+#main h1             {font-family: Arial, Helvetica, sans-serif; font-size: 15pt;
+                      color: rgb(223,29,29); letter-spacing: 6; margin-top: 0px; padding: 0px}

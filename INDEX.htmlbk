@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Homepage</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style2.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		
+
+	
+
+		
+		<SCRIPT LANGUAGE="JavaScript">
+		
+
+		<!-- Begin
+		function popup(URL) {
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=1,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=1100,height=800');");
+		}
+		// End -->
+		</script>
+
+	
+</head>
+<body>
+
+		<!-- Header -->
+			<div id="header-wrapper">
+		
+
+				
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+						
+							
+<h1><a href="#" id="logo">Tiffany </a></h1>
+							
+						
+						</div>
+					</div>
+				</header>
+				<div id="banner" >
+					<div class="container">
+						<div class="row">
+							<div class="6u"> <!--style="width: 1150px-->
+							
+									<p>This is a personal blog and website which I compose for CS 599 - Computer Science final design project
+										class taken at Pacific States University during Winter Quarter 2014 in fulfilment 
+										of graduation requirement for Master of Science in Computer Science program.</p>
+									<a href="http://www.psuca.edu/" target="_blank" class="button-big">Take a Peek at PSU website</a>
+
+							</div>
+							<div class="6u"> <!--style="width:620px;"-->
+								
+								<!-- Banner Image -->
+								
+									<div class="bordered-feature-image"><img src="images/1.jpg" alt="" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Features -->
+			<div id="features-wrapper" style="height: 460px;"><!--445-->
+				<div id="features"><!--style="width:1560px"-->
+					<div class="container"> <!--style="width: 1150px;1205-->
+						<div class="row" >
+							<div class="3u" style="width: 23.4%">
+							
+								
+									<!-- Feature #2 -->
+									<section>
+										<div class="boxmenu">
+										<a href="TV.html" class="bordered-feature-image" title="Click to read more" target="_blank"><img src="images/v10.jpg" 
+											alt="or v9" /></a>
+										<h2><a href="tv.html" style="text-decoration : none;">My favorite TV shows</a></h2>
+										<p>
+											Adventurous, action, fun,
+											brain teasing, great plot, take place
+											in the past but filmed recently, cute and real life stories, 
+											travel series, talent/competition shows
+											
+										</p></div>
+									</section>
+
+							</div>
+							<div class="3u" style="width: 23.8%">
+								
+							<!-- Feature #4 -->
+									<section>
+										<div class="boxmenu">
+										<a href="poems.html" class="bordered-feature-image" title="Click to read more" target="_blank"><img src="images/7-new.jpg" alt="" /></a>
+										<h2><a href="poems.html" style="text-decoration : none;">Poems and Reflections</a></h2>
+										<p> Random views of life from an artist's perspective.
+										</p></div>
+										<!--. Lebanese poet describes the world 
+											in poetic, contemplative, spot on views of how being alive is
+											seen from an artist's perspective, amusing somehow.-->
+										
+									</section>
+
+							</div>
+							<div class="3u" style="width: 24.1%">
+								
+								<!-- Feature #3 -->
+									<section>
+										<div class="boxmenu">
+										<a href="MyMusic.html" class="bordered-feature-image" title="Click to read more" target="_blank"><img src="images/t5new.jpg" alt="" /></a>
+										<h2><a href="MyMusic.html" style="text-decoration : none;">Music I listen to</a></h2>
+										<p>
+											Appreciate all kinds of music that will lighten up the day! 
+										</p></div>
+									</section>
+
+							</div>
+							<div class="3u" style="width: 24%"><!-- style="width: 310px;-->
+								<!-- Feature #1 -->
+								<section>
+									
+								<div class="slide" style="padding:10px 23px 0px 10px; background: #fff url('images/bg04.png');">
+								<iframe src="http://slideful.com/v20140316_2125047490096172_ijf.htm"
+								frameborder="0" style="border:0px;padding:0px;margin:0px;width:269px;height:193px;" 
+								allowtransparency="true"></iframe></div>
+								
+								<!--a href="http://slideful.com/v20140207_2131182642096172_pf.htm">View the slide show</a-->
+										<h2 style ="margin-top: 27px">Beautiful Los Angeles</h2>
+											Random views of Los Angeles metropolitan area
+											and its surrounding cities.
+										
+										<!--	A very densely populated Los Angeles metropolitan area
+											and its surrounding cities.-->
+									</section>
+							
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper" ><!--style="height: 738px;"-->
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+
+									<section>
+										<header>
+											<h2>Important</h2>
+								
+										</header>
+											<font size = "4.8px">
+											This site needs Java Plugins and 3D API to run its applications. Click on 
+											<a href = "http://www.java.com/en/download/index.jsp" target="_blank">[1]</a>
+											to download Java Runtime Environment, and 
+											<a href = "http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-
+											archive-downloads-java-client-419417.html#java3d-1.4.0-doc-oth-JPR" target="_blank">
+											[2] </a> to install Java 3D 1.5.1 and
+											API 1.4.0_01.</font>
+									</section>
+									<section>
+										<header>
+											<h2>Rain Animation</h2>
+											
+										</header>
+										<a href="jars_files/Rain.txt" target="_blank" class="feature-image" title="Yes, click here">
+										
+										<div align="center">
+										<applet code="Rain.class" archive="jars_files/rain.jar">
+										</applet></div></a>
+										
+										<!--header>
+											<h2>Transformations</h2>
+											
+										</header>
+										<a href="jars_files/tr.txt" class="feature-image" title="Yes, click here">
+										<div align="center">
+										<applet code="Transformations.class" archive="jars_files/Transformations.jar">
+										</applet></div></a-->
+										<p>
+											<!--Click each below the animation to get the source codes.
+											You would need Java plugin and Java 3D API to execute these applets.
+											which can be installed into your device by clicking the links below. 
+											--> 
+											<font size = "4.7px">
+											Click below the animation box or <a href="jars_files/Rain.txt" target="_blank">here</a> to get the
+											source code. </font>
+
+										</p>
+									</section>
+									
+
+							</div>
+							<div class="4u">
+							
+								<section>
+										<header>
+											<h2>Special Thanks</h2>
+								
+										</header>
+										<font size = "4.8px">
+										To Professor Brian Suh for 
+										supervising this work and acknowledging this project.</font>
+								</section>
+
+								<!-- Box #2 -->
+									<section>
+										<header>
+											<h2>Sorting Algorithms</h2>
+								
+										</header>
+										<ul class="check-list">
+											<li><a href="Bubble Sort.html">Bubble, </a>
+											<a href="Selection Sort.html">Selection </a></li>
+											<li><a href="Merge Sort.html">Merge, </a>
+											<a href="Shell Sort.html">Shell, </a>
+											<a href="Heap Sort.html">Heap</a></li>
+											<li><a href="Insertion Sort.html">Insertion, </a>
+											<a href="Radix Sort.html">Radix</a></li>
+									
+										</ul>
+										
+									
+									</section>
+									
+
+							</div>
+							<div class="4u">
+								
+								<!-- Box #3 -->
+									<section>
+										<header>
+											<h2>Data Structures</h2>
+										
+										</header>
+										<ul class="quote-list">
+											<li>
+											
+												<img src="images/num1.jpg" alt="" />
+												<p><a href="Array List.html" target="_blank">Array List</a></p>
+												<!--span>ldnkdrngl</span-->
+											</li>
+											<li>
+												<img src="images/num2.jpg" alt="" />
+												<p><a href="Linked Lists.html" target="_blank">Linked Lists</a></p>
+											</li>
+											<li>
+												<img src="images/num3.jpg" alt="" />
+												<p><a href="Hash Tables.html" target="_blank">Hash Tables</a></p>
+											</li>
+											<li>
+												<img src="images/num4.jpg" alt="" />
+												<p><a href="Stacks.html" target="_blank">Stacks</a></p>
+											</li>
+											<li>
+												<img src="images/num5.jpg" alt="" />
+												<p><a href="Queues.html" target="_blank">Queues</a></p>
+											</li>
+										</ul>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="8u">				
+							<!-- Links -->
+								<section>
+									<h2 style="font-size: 2em">Test, try, and study these animations </h2><!--Important Stuff-->
+									<div>
+										<div class="row">
+											<div class="3u">
+												<ul class="link-list last-child">
+													<li><form>
+													<input style="font-size: 22px" type=button value="Change Background" onClick="javascript:popup('Change Background.html')">
+													</form></li>
+													
+													<li>
+													<form><input style="font-size: 22px" type=button value="Transform a square" onClick="javascript:popup('transform.html')">
+													</form></li>
+													
+													<li><!---aaa-->
+													<form><input style="font-size: 22px" type=button value="Marble" onClick="javascript:popup('Marble.html')">
+													</form></li>
+													
+													<li><!---aaa-->
+													<form><input style="font-size: 22px" type=button value="Morphing" onClick="javascript:popup('Morphing.html')">
+													</form></li>
+											
+												</ul>
+											</div>
+											<div class="3u">
+												<ul class="link-list last-child">
+													<li>
+													<form><input style="font-size: 22px" type=button value="Fog" onClick="javascript:popup('Test Fog.html')">
+													</form></li>
+													
+													<li>
+													<form><input style="font-size: 22px" type=button value="Test Lights" onClick="javascript:popup('Test Lights.html')">
+													</form></li>
+													
+													<li>
+													<form><input style="font-size: 22px" type=button value="Mirror" onClick="javascript:popup('Mirror.html')">
+													</form></li>
+														
+													<li><!---aaa-->
+													<form><input style="font-size: 22px" type=button value="Bezier Surface" onClick="javascript:popup('Bezier.html')">
+													</form></li>
+												</ul>
+											</div>
+											<div class="3u">
+												<ul class="link-list last-child">
+													<li>
+													<form><input style="font-size: 22px" type=button value="Test Matrix" onClick="javascript:popup('Test Matrix.html')">
+													</form></li>
+													
+													<li>
+													<form><input style="font-size: 22px" type=button value="Color Tetrahedron" onClick="javascript:popup('Color Tetrahedron.html')">
+													</form></li>
+													
+													<li>
+													<form><input style="font-size: 22px" type=button value="Clock 2D" onClick="javascript:popup('Clock 2D.html')">
+													</form></li>
+													
+															
+													<li>
+													<form><input style="font-size: 22px" type=button value="Life" onClick="javascript:popup('Life.html')">
+													</form></li>
+												</ul>
+											</div>
+											<div class="3u">
+												<ul class="link-list last-child">
+													
+															
+													<li>
+													<form><input style="font-size: 22px" type=button value="Test α" onClick="javascript:popup('TestA.html')">
+													</form></li>
+											
+													<li>
+													<form><input style="font-size: 22px" type=button value="Clip Text" onClick="javascript:popup('TestClip.html')">
+													</form></li>
+													
+													<li>
+													<form><input style="font-size: 22px" type=button value="Font Fun" onClick="javascript:popup('FontFun.html')">
+													</form></li>
+													
+													<li>
+													<form><input style="font-size: 22px" type=button value="Hello 2D" onClick="javascript:popup('Hello 2D.html')">
+													</form></li>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+						</div>
+						<div class="4u">
+							
+							<!-- Blurb -->
+							
+								<section>
+									
+									
+									<div align = "center">
+									<applet code="Cup.class" archive="jars_files\Cup.jar"
+									width="380" height="200">
+									</applet>Combining texture mapping and lighting in Java. 
+									See the <input type=button value="codes" onClick="javascript:popup('jars_files/Cup.txt')">
+									</div>
+									
+									
+								</section>
+						
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+
+	</body>
+</html>

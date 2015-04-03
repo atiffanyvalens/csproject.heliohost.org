@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Linked Lists</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		
+		<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+	
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+			<!-- Start css3menu -->
+			
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+										<nav class="horizontal">
+												   
+										<ul> 
+										<li style = "float: left; text-align: left; margin: 5px; width: 14%; display: inline; width: 400px; ">
+										<h2> Linked Lists </h2> </li>
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Array List.html">Array List</a></li>	
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold; border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Hash Tables.html">Hash Tables</a></li>
+										
+						
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Stacks.html">Stacks</a></li>	
+								                <li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Queues.html">Queues</a></li>  
+										
+										
+								       		</ul>
+										</nav> </br> </br>
+										
+										</header>
+										
+										<p> <font size="4px" face="Calibri">  
+								
+
+											<div style="font-weight: bold;">A Singly Linked List</div></br>
+																					 
+											public class First{
+											<div style ="margin-left: 2em;">
+												public int item;  </br>
+												public First next;  </br> </br>
+											
+												public First(int i) </br>
+												{ 	<div style ="margin-left: 2em;">
+													this.item = d;
+													</div>	
+												} </br> </br>
+												
+												public void displayLink()  </br>
+												{	<div style ="margin-left: 2em;">
+													System.out.print(item + " ");
+													</div>
+												} </br> </br>
+												
+												public static class firstLast{  </br>
+												<div style ="margin-left: 2em;">
+													private First first;
+													private First last;  </br> </br>
+													
+													
+													public firstLast(){  
+													<div style ="margin-left: 2em;">
+														first = null; </br>				
+														last = null;
+													</div>
+													} </br> </br>
+													
+													public boolean isEmpty(){ 
+													<div style ="margin-left: 2em;">
+														return first == null; 
+													</div>        
+													} </br> </br>
+													
+													public void insertFirst(int x){
+													<div style ="margin-left: 2em;">
+														First newlink = new First(x);
+														</br> </br>
+														if (isEmpty()) 	{ 
+														<div style ="margin-left: 2em;">
+														last = newlink;	</div> 	
+														} </br> 
+														  newlink.next = first; </br> 
+														  first = newlink;</br> 
+													</div>
+													} </br> </br> 
+													
+													public void insertLast(int x){
+													<div style ="margin-left: 2em;">
+														First newlink = new First(x);
+														</br> </br> 
+														if (isEmpty()){ <div style ="margin-left: 2em;"> 
+														first.next = newlink;</div> 
+														}	</br> 
+														else{ <div style ="margin-left: 2em;">
+															last.next = newlink; </br> 
+															last = newlink; </div> 
+														} </br> 
+													</div>
+													} </br> </br> 
+													
+													public int deleteFirst(){  
+													<div style ="margin-left: 2em;">
+														int temp = first.item;
+														</br> </br> 
+														if(first.next == null){ <div style ="margin-left: 2em;"> 
+															last = null; </div> 
+														} </br> 
+														</br> 
+														
+														first = first.next; </br> 	
+														return temp; </br> 
+													</div>		
+													} </br> </br> 
+													
+													public void displayList(){
+													<div style ="margin-left: 2em;">
+														System.out.println("\nList (first-->last): ");</br> 
+														First current =  first; </br> 
+														while (current != null){ <div style ="margin-left: 2em;">
+															current.displayLink(); </br> 
+															current = current.next; </div> 
+														} </br>
+														System.out.println(); 
+													</div>
+													} </br> </br> 
+													
+													public static class FirstTest{ </br> 
+													public static void main(String[] args) { </br> 
+													<div style ="margin-left: 2em;">
+														firstLast list = new firstLast();
+														list.insertFirst(1); </br> 
+														list.insertFirst(2);</br> 
+														list.insertFirst(3);</br> 
+														list.insertFirst(4); </br> 
+														list.insertLast(5); </br> 
+														list.insertLast(6); </br> 
+														list.deleteFirst();</br> 
+														list.insertLast(7);</br> 
+														list.insertLast(8);</br> 
+											
+														list.displayList();</br> 
+													</div>
+													}</br> 
+													} </br> 
+												} </div>
+											} 
+											
+											</br></br>
+											<!--
+											All codes and explanations in this section taken from <div style="font-weight: bold; display: inline;">Cracking the Coding Interview, Gayle Laakmann</div>.</br>-->
+										</p>
+										
+										<p><div align = "center"><a href="#"> <img src ="images/t2.png"/> </a></div></p>	
+										
+									
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+			</div>
+
+		<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+
+	</body>
+</html>

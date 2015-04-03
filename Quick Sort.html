@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Quick Sorting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+	
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+					<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast">
+				<a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section style = "background: rgba(255,255,255,1);">
+										<header>
+											<h2>Quick Sort</h2>
+										
+										</header>
+										
+										<p> <font size="4px">  
+											In the majority of situations, it’s the fastest, operating in O(N*logN) time. </br>
+											This is only true for internal or in-memory sorting; for sorting data in disk files, other algorithms
+											may be better. Quicksort was discovered by C.A.R. Hoare in 1962.</br>
+											
+											Basically, the quicksort algorithm operates by
+											partitioning an array into two subarrays and then calling itself recursively to quicksort
+											each of these subarrays. However, there are some embellishments we can make
+											to this basic scheme. They have to do with the selection of the pivot and the sorting
+											of small partitions. </br>
+											
+											<div style="font-weight: bold">Features</div></br>
+											Similar to mergesort - divide-and-conquer recursive algorithm</br>
+											One of the fastest sorting algorithms</br>
+											Average running time O(NlogN)</br>
+											Worst-case running time O(N2)</br></br>
+
+											<div style="font-weight: bold">Basic idea</div></br>
+											Pick one element in the array, which will be the pivot.</br>
+											Make one pass through the array, called a partition step, re-arranging the entries so that:
+											the pivot is in its proper place.</br>
+											entries smaller than the pivot are to the left of the pivot.</br>
+											entries larger than the pivot are to its right.</br>
+											Recursively apply quicksort to the part of the array that is to the left of the pivot, 
+											and to the right part of the array.</br>
+											Here we don't have the merge step, at the end all the elements are in the proper order.</br></br>
+											
+											
+											Source: <font style="font-weight: bold; display: inline;"> 
+											Data Structures & Algorithms in Java, Robert Lafore. </font></br></br></br>
+											
+											<font size = "6px"><div align="center" style="margin-top:5px">Quick Sort Algorithm</div></font>
+											</br>	
+										</p>
+										
+										<p style ="margin-left:5em;"> 
+										<font size="4.8px" face="Arial">  
+												<div style ="margin-left: 2em;">
+												   
+												   quickSort(temp, 0, temp.length-1); // choose a pivot of the middle of the array
+												   </br></br>
+												   void quickSort(int[] a, int p, int r)	</br>
+													{	<div style ="margin-left: 2em;">									
+														if(p<r)								</br>
+														{	<div style ="margin-left: 2em;">							
+															int q = partition(a, p, r);</br>
+															quickSort(a, p, q);</br>
+															quickSort(a, q+1, r);</div>
+														}</div>
+													}</br></br>
+
+												   
+													 int partition(int[] a, int p, int r) {</br>
+														<div style ="margin-left: 2em;">
+														int x = a[p];</br>
+														int i = p-1 ;</br>
+														int j = r+1 ;</br>
+
+														while (true) {</br>
+															<div style ="margin-left: 2em;">
+															do {
+																<div style ="margin-left: 2em;">
+																i++;</div>
+															} while (i < r && a[i] < x);</br></br>
+															
+															do {
+																<div style ="margin-left: 2em;">
+																j--;</div>
+															} while (j > p && a[j] > x);</br></br>
+
+															if (i < j)
+																<div style ="margin-left: 2em;">
+																swap(a, i, j);</div>
+															else<div style ="margin-left: 2em;">
+																return j;</div>
+															</div>
+														}
+														</div>
+													 }</br></br>
+
+													void swap(int[] a, int i, int j) {
+														<div style ="margin-left: 2em;">
+														int temp = a[i];</br>
+														a[i] = a[j];	</br>
+														a[j] = temp;	
+														</div>
+													}	
+												</div></br></br>
+												
+											<div align="center">
+											These videos illustrate how Quick Sort works to sort simple numbers.</div></br>
+											
+											<div align="center">
+											<iframe width="560" height="349" src="https://www.youtube.com/embed/XE4VP_8Y0BU?"
+											frameborder="0" allowfullscreen="0"></iframe>
+											</div></br></br>
+											
+											<div align="center">
+											<iframe width="560" height="349" src="https://www.youtube.com/embed/ywWBy6J5gz8?"
+											frameborder="0" allowfullscreen="0"></iframe>
+											</div></br></br>
+											</font>
+										</p>
+										
+										<p>	
+										This applet needs Java plugin to run. You can install it by clicking the following link. <a href = "http://www.java.com/en/download/index.jsp" target="_blank">
+										Download the Java Runtime Environment</a>.
+
+										<div align="center">
+										<applet code="quicksort.class" archive="jars_files/quick.jar"
+										width="800" height="450">
+										</applet></div>
+										The complete code for this app is <a href="jars_files/quick.txt" target="_blank">here</a> .
+										</p>
+										
+										<p><font size="4px">Also, see <a href="Bubble Sort.html" style="color:purple">Bubble Sort</a></font>
+										<font size="4px"><a href="Selection Sort.html" style="color:purple">Selection Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Merge Sort.html" style="color:purple">Merge Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Shell Sort.html" style="color:purple">Shell Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Insertion Sort.html" style="color:purple">Insertion Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Radix Sort.html" style="color:purple">Radix Sort</a>&nbsp;.</font>
+										</p>
+										<p><font size="4px"><a href="#" style="color:brown"> Back to Top </a></font>
+										</p>
+									
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+
+	<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+
+	</body>
+</html>

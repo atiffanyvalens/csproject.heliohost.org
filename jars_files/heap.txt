@@ -1,0 +1,220 @@
+// Anastasia Tiffany Valens
+// 2/21/2014
+
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+import javax.swing.BoxLayout;
+
+public class heapapp extends Applet
+{
+   private Panel Panel1;          // To hold a text field
+   private Panel Panel2;          // To hold a text field
+   private Panel Panel3;          // To hold a text field
+   private Panel Panel4;          // To hold a text field
+   private Panel Panel5;
+   private Panel buttonPanel;     // To hold a button
+   private TextField INPUT;  
+   private TextField N_OF_ELEMENTS;    
+   private TextField RESULTS;
+   
+   /**
+      init method
+   */
+
+   public void init()
+   {
+      // Build the panels.
+      buildpanel1(); buildpanel5();
+      buildpanel2(); buildpanel3();
+      buildpanel4();
+      buildButtonPanel();
+
+      // Create a layout manager.
+      setLayout(new GridLayout(6, 1));
+
+      // Add the panels to the applet.
+      add(Panel1);
+      add(Panel2);
+      add(Panel3); 
+      add(buttonPanel);
+      add(Panel4);  
+      add(Panel5);  
+	  
+   }
+
+   /**
+      The buildpanel1 method 
+   */
+
+   private void buildpanel1()
+   {
+      // Create the panel.
+      Panel1 = new Panel();
+
+      // Create a label to display a message.
+      Label message1 = new Label("HEAP SORT PROGRAM ");
+
+      // Create a layout manager for the panel.
+      Panel1.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel1.add(message1);
+
+   }
+   
+   private void buildpanel5()
+   {
+		 Panel5 = new Panel();
+		 Label message5 = new Label("Created by A. Tiffany Valens 2/21/2014");
+		 Panel5.setLayout(new FlowLayout(FlowLayout.CENTER));
+		 Panel5.add(message5);
+	}
+
+   private void buildpanel2()
+   {
+      // Create the panel.
+      Panel2= new Panel();
+
+      // Create a label to display a message.
+      Label message2 = new Label("Please Enter THE No. OF ELEMENTS you want to sort:\t");
+		
+      N_OF_ELEMENTS = new TextField(40);
+     
+      // Create a layout manager for the panel.
+      Panel2.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel2.add(message2);
+      Panel2.add(N_OF_ELEMENTS);
+   }
+
+   private void buildpanel3()
+   {
+      // Create the panel.
+      Panel3= new Panel();
+
+      // Create a label to display a message.
+      Label message3 = new Label("Now, Please Enter the numbers to sort each separated by a whitespace:");
+
+      // Create a text field for the Celsius temp.
+      INPUT = new TextField(40);
+
+      // Create a layout manager for the panel.
+      Panel3.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel3.add(message3);
+      Panel3.add(INPUT);
+   }
+   
+   private void buildpanel4()
+   {
+      // Create the panel.
+      Panel4= new Panel();
+
+      // Create a label to display a message.
+      Label message2 = new Label("The sorted list (using HEAP SORT) will be \t");
+
+      // Create a text field for the Celsius temp.
+      RESULTS = new TextField(40);
+
+      // Make the text field read-only.
+      RESULTS.setEditable(false);
+
+      // Create a layout manager for the panel.
+      Panel4.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+      // Add the label and text field to the panel.
+      Panel4.add(message2);
+      Panel4.add(RESULTS);
+   }
+   /**
+      The buildButtonPanel method
+   */
+
+
+   private void buildButtonPanel()
+   {
+      // Create the panel.
+      buttonPanel = new Panel();
+
+      // Create a button with the text "Convert".
+      Button convButton = new Button("Calculate");
+
+      // Add an action listener to the button.
+      convButton.addActionListener(new ButtonListener());
+
+      // Add the button to the panel.
+      buttonPanel.add(convButton);
+   }
+
+   
+   static void heapsort(Object[] data) {
+		
+		for (int i = data.length/2 - 1;	i >= 0; --i)
+			moveDown(data,i,data.length-1);
+		for (int i = data.length-1; i >= 1; --i) {
+			swap(data,0,i);
+			moveDown(data,0,i-1);
+		}
+	}
+	
+	public static void swap(Object[] a, int e1, int e2)	{
+       Object tmp = a[e1]; a[e1] = a[e2]; a[e2] = tmp;
+    }
+   
+	private static void moveDown(Object[] data, int first, int last) {
+       
+        int largest = 2*first + 1;
+        while (largest <= last) {
+           if (largest < last && // first has two children (at 2*first+1 and 2*first+2)
+               ((Comparable)data[largest]).compareTo(data[largest+1]) < 0)
+				largest++;
+           if (((Comparable)data[first]).compareTo(data[largest]) < 0) {  
+                swap(data,first,largest);       // if necessary, swap values
+                first = largest;                // and move down;
+                largest = 2*first + 1;
+           }
+           else largest = last + 1;// to exit the loop: the heap property isn't violated by data[first]
+       }        
+	}
+	
+   /**
+      Private inner class that handles the action event
+      that is generated when the user clicks the convert
+      button.
+   */
+
+   private class ButtonListener implements ActionListener
+   {
+      public void actionPerformed(ActionEvent e)
+      {
+        int n, i;  
+         
+        n = Integer.parseInt(N_OF_ELEMENTS.getText()); 
+        
+        String[] vals = (INPUT.getText()).split("\\s+"); // split the sting by whitespaces accepts regex. 
+  
+    	Object []arrayObject = new Object [n];
+     	for(i=0;		i<n;		i++)	{
+            arrayObject[i]=Integer.parseInt(vals[i]);      	
+     	}
+		
+     	//Sort an array using heap sort algorithm
+        heapsort(arrayObject);
+         
+        //Print array after sorting using heap sort algorithm       
+        String displayMessage = " ";
+        for(i=0; i <arrayObject.length; i++){          			
+            displayMessage += arrayObject[i];
+            displayMessage += " ";           
+        }
+
+        RESULTS.setText(displayMessage);
+      }
+   }  
+}

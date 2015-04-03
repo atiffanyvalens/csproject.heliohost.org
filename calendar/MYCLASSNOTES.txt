@@ -1,0 +1,14 @@
+window does not need to be written, at the top of the tree.
+document.images --->CREATE AN ARRAY
+
+getElementsByTagName -->just the opening tag.
+
+0px top
+	left
+	[]
+	[]
+	[]
+	0 px 0 px 30px 150px 
+	
+zindex; A is above B (3 is above 2).
+Current active menu shown on screen.

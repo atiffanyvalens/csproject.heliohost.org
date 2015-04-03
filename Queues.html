@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Queues</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		
+	<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+	
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+					<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast">	<a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+										<nav class="horizontal">
+												   
+										<ul> 
+										<li style = "float: left; text-align: left; margin: 5px; width: 14%; display: inline; width: 400px; ">
+										<h2>Queues </h2> </li>
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Array List.html">Array List</a></li>
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold; border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Hash Tables.html">Hash Tables</a></li>
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Linked Lists.html">Linked Lists</a></li>
+											
+								                <li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  
+								                border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Stacks.html">Stacks</a></li>  
+										
+										
+								       		</ul>
+										</nav> </br> </br>
+										
+										</header>
+										
+										<p> <font size="4px" face="Calibri">  
+											A queue is simply a waiting line that grows by adding elements to its end and shrinks
+											by taking elements from its front. Unlike a stack, a queue is a structure in which both
+											ends are used: one for adding new elements and one for removing them. Therefore,
+											the last element has to wait until all elements preceding it on the queue are removed.</br></br>
+											
+											A queue is an FIFO structure: First In/First Out.
+											Queue operations are similar to stack operations. The following operations are
+											needed to properly manage a queue:</br></br>
+											■ clear()—Clear the queue.</br>
+											■ isEmpty()—Check to see if the queue is empty.</br>
+											■ enqueue(el)—Put the element el at the end of the queue.</br>
+											■ dequeue()—Take the first element from the queue.</br>
+											■ firstEl()—Return the first element in the queue without removing it.</br></br>
+											
+											Source: <font style="font-weight: bold; display: inline;"> 
+											Data Structures and Algorithms in Java, 
+											Adam Drozdek </br></font>
+											
+											
+											
+											<div style="font-weight: bold; background-color: #FFC0CB; border-radius:10px; width: 200px; text-align: center;">Question</div> </br>
+											Create a class which implements a queue </br></br>
+
+											SOLUTION</br></br>
+											
+											class Queue </br>
+											{ <div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+											private int q_size; 		</br>
+											private double[] q_array;	</br>
+											private int front, back, nItems;		
+											</br></br></div>
+											
+											public Queue(int s) </br>
+											{ <div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+											  q_size = s;			</br>
+											  q_array = new double[q_size];	</br>
+																																	  // using an array, name front as 0 and rear is -1.	</br>
+											  front = 0;	&nbsp; 
+											  back = -1;	&nbsp;
+											  nItems = 0;	&nbsp; 
+											  </div>
+											}</br></br>
+
+											public void enqueue(double j) 	</br>
+											{ 	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;"> 
+												
+												if(back == q_size-1) 					&nbsp; &nbsp; 	
+													back = -1; 					</br>
+											
+												q_array[++back] = j; 	</br>
+												nItems++; 	</br>
+												</div>
+											}</br></br>
+											
+											public double dequeue() 	</br>
+											{	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+												double temp = q_array[front++]; 			</br>
+										
+												if(front == q_size) 			&nbsp; &nbsp; 
+												front = 0;				</br>
+												nItems--; 		</br>
+												return temp;</br>
+												</div>
+											}</br></br>
+
+											public double peekFront()  </br>
+											{	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+												return q_array[front];
+												</div>
+											}</br></br>
+										
+											public boolean isEmpty() </br>
+											{	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+												return (nItems==0); </br>
+												</div> 
+											}</br></br>
+											
+											public boolean isFull() </br>
+											{	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+												return (nItems==q_size); </br>
+												</div>
+											}</br></br>
+											
+											public int size()  </br>
+											{	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+												return nItems;
+												</div>
+											}</br>
+											}</br></br>
+																			
+											class QueueApp </br>
+											{	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+												public static void main(String[] args)	
+												{ </br>
+												Queue theQueue = new Queue(5); </br>
+												theQueue.enqueue(10);   
+												theQueue.enqueue(20);   
+												theQueue.enqueue(30); 
+												theQueue.enqueue(40); </br>
+													
+												theQueue.dequeue(); 
+												theQueue.dequeue(); 
+												theQueue.dequeue(); </br>
+												
+												while( !theQueue.isEmpty() ) </br>
+												{ 	<div style ="margin-left: 2em; font-size: 13px; font-family:Verdana;">
+													double n = theQueue.dequeue();  </br>
+													System.out.print(n); </br>
+													System.out.print(" "); </div>
+												} </br>
+												System.out.println(); </br>
+												} </br>
+												</div>
+											} 
+											<br></br>
+											
+											<!--
+											Source: <div style="font-weight: bold; display: inline; font-size: 17px;">Cracking the Coding Interview, Gayle Laakmann-->
+											</br>
+											
+										</font>
+									</p>
+									<p><div align = "center"><a href="#"> <img src ="images/t2.png"/> </a></div></p>		
+									</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+
+		
+		<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+
+	</body>
+</html>

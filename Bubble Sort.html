@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Bubble Sorting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+	
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+					<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Code</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Bubble Sort</h2>
+										
+										</header>
+										
+										<p> <font size="4.5px">  
+							
+											The purpose of sorting is to arrange data from lowest value to highest or vice versa.
+											To understand bubble sorting, assume that the items would be arranged
+											from the lowest value on the left side to the highest value on the right.
+											Take an example of a five element list with numbers from 1 to 5.</br>
+											<div align ="left" style="margin: 30px;">
+											The data are in this order: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+											5, 3, 2, 4, 1.</br>
+											The end result that we would look for should be: 	 &nbsp;&nbsp;&nbsp; 1, 2, 3, 4, 5.</br>
+											</div>
+											Bubble sorting begins by comparing each pair of adjacent items. 
+											
+											If one of those two items is of smaller value (lighter) and if the lighter element is on the right side of its neighbour, 
+											they swap places. 
+											When this element encounters another element which is lighter and it is on the left side, the lighter item would then be 
+											compared with another item on its left side. Element moves to the left side when it is smaller in a way that 
+											
+											Bubble sorting makes a lighter item appears to bubble up to the surface, and the lightest would be swapped continuously
+											until it reaches the most left side. 
+											
+											The process would be repeated until all elements in the list are sorted. </br>
+											
+											</br>A wonderful animation found at <a href = "http://www.ee.ryerson.ca/~courses/coe428/sorting/heapsort.html" target="_blank">
+											http://www.ee.ryerson.ca/~courses/coe428/sorting/heapsort.html </a> could also help to illustrate how Bubble Sort works, as 
+											shown below. To begin the animation, just click Play: 
+											
+											<div align="center">
+											<iframe width="830" height="650" align="middle" style="margin-top:35px; margin-bottom: 30px;"
+											src="http://www.ee.ryerson.ca/~courses/coe428/sorting/bubblesort.html" frameborder="1" scrolling="no"></iframe></div>
+											</br>
+											<font size = "6px"><div align="center">Bubble Sort Algorithm</div></font>
+											</br>
+
+											
+										</p>
+										<p style ="margin-left:5em"> 
+										<font size="4.7px" face="Arial">  	
+											
+											
+											public class bubblesort&nbsp;{</br>
+											</br>
+											private static void bubbleSort(int[] intArray) {</br>
+													
+											
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int n = intArray.length; </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int temp = 0;			</br>
+										
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for &nbsp;&#40; int i&nbsp;=&nbsp;0&#59; &nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;<&nbsp;n &#59; &nbsp;&nbsp;&nbsp;&nbsp;i++ &#41; { </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for &nbsp;&#40; int j&nbsp;=&nbsp;1&#59; &nbsp;&nbsp;&nbsp;&nbsp;j&nbsp;<&#40;n-i&#41;&#59;&nbsp;&nbsp;&nbsp;&nbsp;j++ &#41;{
+														
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+											 if (intArray[j-1] > intArray[j] ){
+														
+												
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+											// swap the elements!
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;	&nbsp; &nbsp; &nbsp;			
+											temp = intArray[j-1];	
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;	&nbsp; &nbsp; &nbsp;
+											intArray[j-1] = intArray[j];	
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;	&nbsp; &nbsp; &nbsp;
+											intArray[j] = temp;	
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;	
+											}
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+											}
+											</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+											}
+											</br>
+											}
+											</br>
+											}
+											</p>
+
+										
+									
+											</font>
+										</p>
+										<p>
+													
+										This applet needs Java plugin to run. You can install it by clicking the following link. <a href = "http://www.java.com/en/download/index.jsp" target="_blank">
+										Download the Java Runtime Environment</a>.
+
+										<div align="center">
+										<applet code="bubbleapp.class" archive="jars_files/bubbleapp.jar"
+										width="800" height="650">
+										</applet></div>
+										To view the code for this app, click <a href="jars_files/bubble.txt" target="_blank">here</a>.
+										</p>
+										
+										<p><font size="3px">Also, see <a href="Selection Sort.html" style="color:purple">Selection Sort</a></font>
+										<font size="4px"><a href="Merge Sort.html" style="color:purple">Merge Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Shell Sort.html" style="color:purple">Shell Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Heap Sort.html" style="color:purple">Heap Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Insertion Sort.html" style="color:purple">Insertion Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Quick Sort.html" style="color:purple">Quick Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Radix Sort.html" style="color:purple">Radix Sort</a>&nbsp;.</font>
+										
+										</p>
+										<font size="4px"><a href="#" style="color:brown"> Back to Top </a></font>
+									</section>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+	</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Merge Sorting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	
+	<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+	
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+					<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Merge Sort</h2>
+										
+										</header>
+										
+										<p> <font size="4px">  
+							
+											Merge Sort is an example of the divide and conquer algorithmic paradigm. The algorithm was invented by John von Neumann in 1945.
+											Merge sort divides the array of elements into smaller subarrays and sort them and then merge these to form a complete sorted array.
+											Conceptually, merge sort works as follows: </br></br>
+
+											Divide the unsorted list into two sublists of about half the size. </br>
+											Divide each of the two sublists continuously until we have list sizes of length 1, in which case the list itself is returned. </br>
+											Merge the two sorted sublists back into one sorted list. 
+					
+											</br></br>The merge sort algorithm: 
+											<div style="margin-left: 40px">
+											<ol>
+											<li>1. Divide the list in half</li>
+ 
+											<li>2. Merge sort the first half</li>
+ 
+											<li>3. Merge sort the second half</li>
+ 
+											<li>4. Merge both halves back together</li>
+											</ol></div>A wonderful <a href=""http://www.ee.ryerson.ca/~courses/coe428/sorting/mergesort.html" target="_blank">
+											link </a> from another website could also help to illustrate how Merge Sort works, as 
+											shown below. To begin the animation, just click Play: 
+											<div align="center">
+											<iframe width="830" height="703" align="middle" style="margin-top:35px; margin-bottom: 30px;"
+											src="http://www.ee.ryerson.ca/~courses/coe428/sorting/mergesort.html" frameborder="1" scrolling="no"></iframe></div>
+											</br>
+											<font size = "6px"><div align="center" style="margin-top:10px">Merge Sort Algorithm</div></font>
+											</br>
+											
+										</p>
+										<p style ="margin-left:5em"> 
+										<font size="4.6px" face="Arial">  	
+									
+											
+											public class mergesort&nbsp;{</br>
+											  </br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;void sort(int[] randomNumbersArray)
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													int []copy = randomNumbersArray.clone();
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													mergeSort( 0 , copy.length - 1, copy);
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}
+
+											  </br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;void mergeSort(int low, int high, int copy[])
+											  </br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{
+											  </br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													if( low < high)
+											  </br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													{
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														int mid = (( low + high) / 2);
+														
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														mergeSort( low, mid, copy); //left side
+														
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														mergeSort( mid + 1, high, copy); // right side
+														
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														merge( low, mid, high, copy); //combine them
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													}
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}
+												</br>
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;void merge( int low, int mid, int high, int copy[])
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int temp[] = new int[high - low + 1];
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int left = low;
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int right = mid + 1;
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int index = 0;
+
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// compare each item for equality
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;while(left <= mid && right <= high)
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													if ( copy[left] < copy[right])
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													{	
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														temp[index] = copy[left];
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														left++;
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													}else
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													{
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														temp[index] = copy[right];
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														right++;
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													}
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													index++;
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}
+
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// if there is any remaining loop through them
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;while(left <= mid || right <= high)
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													if (left <= mid)
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													{
+														
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														temp[index] = copy[left];		
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														left++;	
+														</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														index++;
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													} else if(right <= high)
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													{
+															</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+															temp[index] = copy[right];
+															</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+															right++;
+															</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+															index++;
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													}
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// copy back to array
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(int i = 0; i < temp.length; i++)
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{
+													</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+													copy[low + i] = temp[i];
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}
+												</br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}
+												</br></br>}	
+																				
+											</p>
+											</font>
+										</p>
+										<p>
+													
+										This applet needs Java plugin to run. You can install it by clicking the following link. <a href = "http://www.java.com/en/download/index.jsp" target="_blank">
+										Download the Java Runtime Environment</a>.
+
+										<div align="center">
+										<applet code="mergeapp.class" archive="jars_files/mergeapp.jar"
+										width="800" height="650">
+										</applet></div>
+										The complete code for this app is <a href="jars_files/merge.txt" target="_blank">here</a>.
+										</p>
+										
+										<p><font size="4px">Also, see <a href="Bubble Sort.html" style="color:purple">Bubble Sort</a></font>
+										<font size="4px"><a href="Selection Sort.html" style="color:purple">Selection Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Shell Sort.html" style="color:purple">Shell Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Heap Sort.html" style="color:purple">Heap Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Insertion Sort.html" style="color:purple">Insertion Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Quick Sort.html" style="color:purple">Quick Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Radix Sort.html" style="color:purple">Radix Sort</a>&nbsp;.</font>
+										</p>
+								
+										<p><font size="4px"><a href="#" style="color:brown"> Back to Top </a></font>
+										</p>
+									</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+	</body>
+</html>

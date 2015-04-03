@@ -1,0 +1,266 @@
+
+#wrapper{
+
+	margin: 0px auto;
+}
+
+
+body {
+	background-image: url(wood4.jpg), url(img03.jpg), url(img07.jpg); /*wood3url(8.jpeg), */
+	background-size: contain;
+	background-position: top center, center center,0px 1740px ; /*840, 1740. center center;*/
+	background-repeat:  no-repeat, no-repeat, no-repeat; /*no-repeat,*/
+	text-align:center;
+	min-width: 800px;
+	margin: 0px auto;
+}
+
+h2{
+
+	margin-top:168px;			/*margin-top:168px;*/
+	font-size: 21px;
+	margin-bottom: 10px;
+	letter-spacing: 3px;
+	color: lavender;				 /*plumchange this!!color*/
+}
+
+header{
+	font-size: 19px;
+	color: white;
+	
+	letter-spacing: 3px;
+	margin:  50px auto;
+	padding: 90px auto;
+	font-family: Verdana;
+	text-align: center;
+	text-align: center;
+}
+
+header h1{
+
+	padding: 2px auto;
+}
+
+nav{
+
+	text-align: center;
+}
+
+nav.horizontal {
+	
+	text-align: center;
+	margin-left:10px;
+	
+}
+
+nav.horizontal li {
+	
+	border-right: 3px solid white;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	margin:auto 0px;
+	display: inline;
+	float: left;
+	background-color: rgba(255,255,255,0.4);
+	width:	14%;
+	padding: 8px 10px; 
+	text-align: center;
+
+}
+
+nav.horizontal li a {
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	font-family: Verdana;
+	font-weight: bold;
+	letter-spacing: 2px;
+	
+}
+
+nav.horizontal li a:hover { 			/*change this!!color*/
+	color: rgb(210, 11, 61); 
+}
+
+figure{
+
+	margin-top: 26px; /*margin-top: 26px;*/
+	margin-left: 0px;
+	margin-bottom: 0px;	/*margin-bottom: 50px;*/
+}
+
+figure img{
+	border: 3px solid white;
+}
+
+figcaption{
+	margin-top: 2.5px;
+	margin-bottom: 3px;		/*margin-bottom: 10px;*/
+	text-align: center;
+	font-size: 12px;
+	padding: 20px;				/*padding: 24,28px;*/
+	font-weight: bold;
+	font-family: Verdana;
+	color: black;			 /*change this!!color*/
+	letter-spacing: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	 width: 840px; 
+	 height: 36px;	/*42 px*/
+}
+
+ 
+fieldset{
+	background-color: rgba(255,255,255,0); 	/*maroon;change this!!color*/
+	padding: 12px 6px 3px 6px;
+	width: 335px;	
+	margin: 80px 0% 210px 51%;	/*margin: 290px 47% 0px 0%;*/
+	height: 255px; /*195px;*/
+	border: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+fieldset input{
+
+	padding: 3px 3px;
+	background-color: brown;
+	border: 1px solid cream;
+	width: 89%;
+	font-family: Arial;
+	font-style: italic;
+	font-size: 15px;
+	margin: 8px auto;
+}
+
+fieldset hgroup{
+	float: left;
+	text-align: left;
+	margin: 0px 13px;
+	border: none;
+	font-size: 15px;
+	font-family: Arial;
+	line-height: 2px;
+	letter-spacing: 1px;
+}
+
+
+fieldset hgroup a{
+	color: rgba(255,255,255,0.6);
+}
+fieldset p input{
+
+	width: 34%;
+	margin: auto 14px;
+	float: right;
+	color: rgba(255,255,255,0.6);
+	border: none;
+	font-weight: bold;
+	padding: 4px 2px;
+	height: 36px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+
+input:focus, select:focus, textarea:focus{
+	background-color: rgb(255, 218, 165); /*once clicked, changes the background color*/
+}
+
+
+#gallery {
+	
+	margin-top: 14px;
+	margin-left: 5%;
+	width: 1360px; /*1500px*/
+	height: 747px;	/*height: 760px;*/
+	background-color: rgba(240, 234, 172, 0.2);
+	/*background-color: rgba(238, 232, 170, 0.7);*/
+		overflow: auto; 
+	padding-top: 80px; /*80*/
+	white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#gallery div {
+	margin: 20px;
+}
+
+#gallery div img{
+	margin: 40px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#gallery figcaption {
+	background-color: brown;
+	font-size: 100%;
+	text-align: center;
+	font-style: italic;
+	margin-top: 2px; /*margin-top: 2px;*/
+}
+
+
+section{
+	margin-left: 12.5%;
+	margin-top: 120px;	/*margin-top: 120px;*/
+	margin-bottom: 520px; /*margin-bottom: 490px;*/
+
+}
+
+section img, section p{
+	display: block;
+
+	
+}
+
+section img{
+
+	margin: 20px 20px;
+
+}
+section p{	
+	float:left; clear:right;
+	background-color: rgb(255,255,255);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0px 15px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	padding: 30px;
+}
+
+
+footer{
+margin: -10px 0px -5px 0px;
+
+}
+
+footer p{
+
+font-size: 20px;
+color: black;
+}
+

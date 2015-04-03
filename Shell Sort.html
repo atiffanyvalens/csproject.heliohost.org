@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Shell Sorting</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	
+
+	<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+	
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+				<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Shell Sort</h2>
+										
+										</header>
+										
+										<p> <font size="4px">  
+							
+											Shell sort is a sorting algorithm, devised by D. Shell in 1959, that is a generalization of insertion sort, 
+											which exploits the fact that insertion sort works efficiently on input that is already almost sorted. 
+											It improves on insertion sort by allowing the comparison
+											and exchange of elements that are far apart. The last step of Shell sort is a plain insertion sort, but by then, 
+											the array of data is guaranteed to be almost sorted. </br> </br>
+											
+											Shellsort uses a sequence h1, h2, …, ht called the increment sequence. Any increment sequence is fine as long as  
+											h1 = 1 and some other choices are better than others. </br> </br>
+											
+											Shellsort is also known as diminishing increment sort. 
+											The distance between comparisons decreases as the sorting algorithm runs until the last phase in which adjacent 
+											elements are compared. </br> </br>
+											
+											After each phase and some increment hk, for every i, we have a[ i ] ≤ a [ i + hk ] all elements spaced hk apart 
+											are sorted. The file is said to be hk – sorted. </br> </br>
+											
+											
+											Time complexity:  O(nr) with 1 < r < 2 </br>
+											This is better than O(n2) but generally worse than O(n log2n). </br> </br>
+											
+											Sort: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+											18 &nbsp; 32  &nbsp;  12 &nbsp;  5 &nbsp; 38 &nbsp;  33 &nbsp;  16  &nbsp; 2 </br> </br>
+											
+											8 Numbers to be sorted, Shell’s <font style="color: #66CDAA;">increment</font> will be floor(n/2) &rarr;
+											* floor(8/2) = floor(4) = <font style="color: #66CDAA;">4</font>									</br> </br>
+											
+											Increment 4:	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											<font style="color:blue">1 &nbsp;</font><font style="color:green">2&nbsp;</font>
+											<font style="color:red">3 &nbsp;</font><font style="color:purple">4&nbsp;</font> (visualize underlining) </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+											<font style="color:blue">18 &nbsp;</font><font style="color:green">32&nbsp;</font>
+											<font style="color:red">12 &nbsp;</font><font style="color:purple">5&nbsp;</font>
+											<font style="color:blue">38 &nbsp;</font><font style="color:green">33&nbsp;</font>
+											<font style="color:red">16 &nbsp;</font><font style="color:purple">2&nbsp;</font></br></br>
+														
+											Step 1)  &nbsp; &nbsp; &nbsp; Only look at 18 and 38 and sort in order ; </br>
+											&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 18 and 38 stays at its current position because they are in order.	</br>				
+											Step 2)  &nbsp; &nbsp; &nbsp; Only look at 32 and 33 and sort in order ; </br>
+											&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 32 and 33 stays at its current position because they are in order. </br>
+											Step 3)  &nbsp; &nbsp; &nbsp; Only look at 12 and 16 and sort in order ; </br>
+											 &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 12  and 16 stays at its current position because they are in order. </br>
+											Step 4)  &nbsp; &nbsp; &nbsp; Only look at 5 and 2 and sort in order ; </br>
+											 &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 and 5 need to be switched to be in order. </br> </br>
+
+											Sort: &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											18 &nbsp;  32  &nbsp; 12  &nbsp; 5  &nbsp; 38 &nbsp;  33 &nbsp;  16  &nbsp; 2 </br></br>
+											Resulting numbers after increment 4 pass: </br></br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+														18 &nbsp;	32 &nbsp;	12 &nbsp;	2 &nbsp; 38 &nbsp; 33 &nbsp; 16 &nbsp; 5 </br> </br>
+											The next <font style="color: #66CDAA;">increment</font> would be &rarr; * floor(4/2) = floor(2) = <font style="color: #66CDAA;">2</font></br> </br>
+											Increment 2: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+											<font style="color:blue">1 &nbsp;</font><font style="color:green">2&nbsp;</font></br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+											<font style="color:blue">18 &nbsp;</font><font style="color:green">32 &nbsp;</font>
+											<font style="color:blue">12 &nbsp;</font><font style="color:green">2 &nbsp;</font>
+											<font style="color:blue">38 &nbsp;</font><font style="color:green">33 &nbsp;</font>
+											<font style="color:blue">16 &nbsp;</font><font style="color:green">5 &nbsp;</font></br></br>
+	
+											Step 1) &nbsp; &nbsp; &nbsp; Look at 18, 12, 38, 16 and sort them in their appropriate location: </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+											<font style="color:blue">12 &nbsp;</font><font style="color:green">32 &nbsp;</font>
+											<font style="color:blue">16 &nbsp;</font><font style="color:green">2 &nbsp;</font>
+											<font style="color:blue">18 &nbsp;</font><font style="color:green">33 &nbsp;</font>
+											<font style="color:blue">38 &nbsp;</font><font style="color:green">5 &nbsp;</font></br></br>
+											Step 2) &nbsp; &nbsp; &nbsp; Look at 32, 2, 33, 5 and sort them in their appropriate location: </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+											<font style="color:blue">12 &nbsp;</font><font style="color:green">2 &nbsp;</font>
+											<font style="color:blue">16 &nbsp;</font><font style="color:green">5 &nbsp;</font>
+											<font style="color:blue">18 &nbsp;</font><font style="color:green">32 &nbsp;</font>
+											<font style="color:blue">38 &nbsp;</font><font style="color:green">33 &nbsp;</font></br></br>
+
+											 </br>
+											Final <font style="color: #66CDAA;">increment</font> is always reduced to <font style="color: #66CDAA;">1</font> &rarr; * floor(2/2) = floor(1) = 1 </br> </br>
+											
+											Increment 1:	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+											<font style="color:blue">1 &nbsp;</font> </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+											<font style="color:blue">12	&nbsp; 2 &nbsp;	16 &nbsp; 5	&nbsp; 18 &nbsp; 32 &nbsp; 38 &nbsp; 33 </font></br>
+											Sorting: </br>
+
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+											<font style="color:blue">2	&nbsp; 5 &nbsp;	12 &nbsp; 16 &nbsp; 18 &nbsp; 32 &nbsp; 33 &nbsp; 38 </font></br>
+											</br>		
+											The last increment or phase of Shellsort is basically an Insertion Sort algorithm. </br></br>
+
+											Source: &nbsp; <a href="http://www.cs.sjsu.edu/faculty/lee/cs146/ISSort-AndyLe.ppt">http://www.cs.sjsu.edu/faculty/lee/cs146/ISSort-AndyLe.ppt</a>
+											</br>
+											</br> </br>
+											<font size = "6px"><div align="center" style="margin-top:10px">Shell Sort Algorithm</div></font>
+											</br>
+										</p>
+										<p style ="margin-left:4em"> 
+										<font size="4.8px" face="Arial">  	
+											
+											public class shellsort &nbsp; { </br></br>
+	
+											public static void shellSort (Object[] data) &nbsp; { 
+											<div style="margin-left:5em;">
+											int i, j, k, h, hGap, increments[] = new int[20]; </br></br>
+											
+											// Create an appropriate number of increments h. </br>
+											for (h = 1,	i = 0; &nbsp; h < data.length; &nbsp; i++) { </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; increments[i] = h;	</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h = 3*h + 1;		</br>
+											} </br></br>		
+											
+											// Loop on the number of different increments h. </br>
+											for (&nbsp;i--; &nbsp; i >= 0; &nbsp;	i--) {			</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h = increments[i]; </br></br>
+											
+											// Loop on the number of subarrays h-sorted in ith pass. </br>
+											for (hGap = h; &nbsp; hGap < 2*h; &nbsp; hGap++) {</br></br>
+											
+											// Insertion sort for subarray containing every hth element of array data </br>
+											for (j = hGap; &nbsp; j < data.length;) { </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Comparable tmp = (Comparable)data[j]; </br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; k = j;								  </br>
+											while (k-h >= 0 &nbsp;&& &nbsp; tmp.compareTo(data[k-h]) &nbsp;< 0) {	</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data[k] = data[k-h];	</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; k -= h;								</br>
+											}</br>	
+											
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data[k] = tmp;							</br>
+											&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; j += h;</br>
+											}</br>							
+											}
+											</div>
+											<div style="margin-left: 4em">
+											}</br>
+											}</div>
+											</font>
+										</p>
+										<p>
+													
+										This applet needs Java plugin to run. You can install it by clicking the following link.  
+										<a href = "http://www.java.com/en/download/index.jsp" target="_blank">
+										Download the Java Runtime Environment</a>.
+
+										<div align="center">
+										<applet code="shellapp.class" archive="jars_files/shellapp.jar"
+										width="800" height="650">
+										</applet></div>
+										The complete code for the app is <a href="jars_files/shell.txt" target="_blank">here</a>.
+										</p>
+										
+										<p><font size="4px">Also, see 
+										<a href="Bubble Sort.html" style="color:purple">Bubble Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Selection Sort.html" style="color:purple">Selection Sort</a></font>
+										<font size="4px"><a href="Merge Sort.html" style="color:purple">Merge Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Heap Sort.html" style="color:purple">Heap Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Insertion Sort.html" style="color:purple">Insertion Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Quick Sort.html" style="color:purple">Quick Sort</a>&nbsp;</font>
+										<font size="4px"><a href="Radix Sort.html" style="color:purple">Radix Sort</a>&nbsp;.</font>
+										</p>
+										<p><font size="4px"><a href="#" style="color:brown"> Back to Top </a></font>
+										</p>
+									
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+
+	<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+		<title>Test Clip</title>
+		<SCRIPT LANGUAGE="JavaScript">
+		
+
+		function popup(URL) {
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=1,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=900,height=700');");
+		}
+		
+		</script>
+	
+
+</head>
+	<body>
+	
+								<!-- Main Content -->
+									<section>
+										
+									
+										
+										
+										<p>
+											<font size="4px"><div align = "center">
+											<applet code="src.TestClip.class" archive="jars_files/TestClip.jar"
+											width="960" height="500">
+											</applet></br></div>
+											</font>
+										</p>
+										
+										<p>
+										<div align = "center">
+										<span style="line-height: 40px; display:block;">
+										<font size="4px" style="font-family: Tahoma">
+										
+						Clipping in Java Graphics2D is used to define a region in which the objects will actually be visible </br>
+						This method sets an ellipse as the clipping shape and cuts the text "Clip Path" with the specified shape.</br>
+										
+						To view the code for this app, click 
+						<form><input type=button value="here." onClick="javascript:popup('jars_files/Clip.txt')">
+						</form>
+										</font>
+										</span></div>
+										</p>		
+									
+						</section>
+
+					
+
+	</body>
+</html>

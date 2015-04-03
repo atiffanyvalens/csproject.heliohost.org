@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+   <!--
+   
+      Author:  Anastasia Tiffany Valens
+      Date:	September 9, 2013
+	  
+	-->
+	  
+	  <meta content="text/html; charset=UTF-8" http-equiv="content-type"  />
+	  <meta name="author" content="Anastasia Tiffany Valens"/> 
+	  <meta name="description" content="Travel Recommendations" />
+	  <meta name="keywords" content="travel, top destinations, USA" />
+	  <script src="modernizr-1.5.js"></script> 
+      <script src="formsubmit.js"></script>
+      <title>Travel</title><!--title of web browser-->
+      <link href="index.css" rel="stylesheet" type="text/css"/>  	  
+
+</head>
+
+<div id="wrapper">
+<body>
+	<header>
+		<h1>Travel Hub</h1>
+	</header>
+
+	<nav class="horizontal">   
+		<ul>
+		
+			<li><a href="index.html" target="_top" style="text-decoration: underline">Home</a> 
+			</li>		
+            <li><a href="#">Travel Guides</a></li>
+			<li><a href="#">Meet Members</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Share Your Travels</a></li>
+			<li><a href="#login" style="text-decoration: underline">Login</a></li>
+        </ul>
+	</nav>
+
+	<h2> September 9-15, 2013: Weekly Features </h2>
+		
+	
+	<div align ="center">
+		<figure>
+		<div id="pic">
+		<img src="map-1.jpg" alt="All" usemap="#allcategories"/> <!--Link image map to inline image-->
+		</div>
+		
+		<figcaption style="border: 1px solid moccasin; border-radius: 10px; font-size: 14px; background-color: moccasin; line-height:170%; line">
+		<a href="#pic">The picture above covers ten areas representing different travel destinations. </br>
+		Click on each area to read recommendations ... </a> </br>
+		
+		</figcaption></figure>
+	
+	<map name="allcategories">
+		<area shape="rect" coords="0,0,297,191" href="all/beaches/beaches.html" target="_top" title="Click to read more"/>
+		<area shape="rect" coords="292,0,652,191" href="http://www.movoto.com/blog/top-ten/10-most-exciting-cities/" target="_blank" title="Click to read more"/>
+		<area shape="rect" coords="647,0,869,212" href="all/hotels/hotels.html" target="_top" title="Click to read more"/>
+		<area shape="rect" coords="0,187,292,409" href="all/landmarks/landmarks.html" target="_top" title="Click to read more"/>
+		<area shape="rect" coords="578,212,869,409" href="all/mountains/mountains.html" target="_top" title="Click to read more"/>
+		<area shape="rect" coords="291,187,567,409" href="all/museums/museums.html" target="_top" title="Click to read more"/>
+		<area shape="rect" coords="0,407,186,572" href="http://www.huffingtonpost.com/2013/04/19/best-zoos-in-the-us_n_3117974.html" target="_blank" title="Click to read more"/>
+		<area shape="rect" coords="185,406,396,572" href="all/national-parks/national-parks.html" target="_top" title="Click to read more"/>
+		<area shape="rect" coords="392,403,639,572" href="all/restaurants/restaurants.html" target="_top" title="Click to read more"/>
+		<area shape="rect" coords="631,403,869,572" href="all/ski-resorts/ski-resorts.html" target="_top" title="Click to read more"/>
+	</map>
+	<div>
+		
+		<div align="center">
+		<figure id="gallery">   
+		<div>
+            <img src="fall-foliage.jpg"/>
+		</div>
+        
+		<div style="width:600 px">
+		<div style="float:left; width:100 px"><img src="florida.jpg"/><h4>Florida</br>Wildlife Refuge, Walt Disney World</h4></div>
+        <div style="float:left; width:100 px"><img src= "new york.jpg" /><h4>New York City</br>Macy's Thanksgiving Parade</h4></div>
+        <div style="float:left; width:100 px"><img src= "cayman.jpg" /><h4>Cayman Islands</br>Pirates Week Festival</h4></div>
+        <div style="float:left; width:100 px"><img src= "morocco.jpg" /><h4>Morocco</br>Sahara Desert Trek</h4></div>
+		<div style="clear:both"></div>
+		</div>
+        <figcaption>Travel Picks</figcaption>
+		</figure>
+		
+		</div>
+		
+		<div align ="center">
+		<!--Insert a form element-->
+		
+		<form id="login" name="login" action="index.html" method="post">	
+		<fieldset id="login">
+			
+			<!--5. Create input boxes-->
+			<!--10. All the fields within the billing field set marked as required fields except
+			the street2 field-->
+			<div style="margin-top: 10px">
+			<input name="email" id="email" placeholder="Email" type="email" required="required"/> </div>
+			<input name="password" id="password" placeholder="Password" pattern="^(?=.*\d).{4,15}$" required="required"/>
+			<!--regex pattern from internet: password must be between 4 and 15 digits long and include 
+			at least one numeric digit-->	
+			
+				
+			<hgroup>		
+			<h5><a href="#">Register Now ></a></h5>		
+			<h5><a href="#">Forgot Login ></a></h5>
+			<h5><a href="index.html" style="color: plum">Back to Top ></a></h5>
+			</hgroup>
+			
+			<!--Insert a submit button At the bottom of the form,-->
+			<p>
+			<input type="submit" value="LOG IN"/>
+			</p>
+			
+		</fieldset>
+		</form>
+		</div>
+		
+		<section>
+		<div align="center">
+		<p><img src="cnn.jpeg"/>
+		"An absolute must for travellers."</p>
+	
+		<p><img src="forbes.jpeg"/>
+		"A critical part of anyone's travel plans"</p>
+		
+		<p><img src="time.jpg"/>
+		"Excellent and useful site!"</p>
+		</div>
+		</section>
+	
+
+	<footer>
+	<p>About Travel Hub |<a href="mailto:anastasia_valens@yahoo.com?subject=Travel Hub%20Message"> Contact Me </a>
+	| Press Center | Help | Travel Tools | User Agreement | Privacy Statement </p>
+	</footer>
+</div>
+</body>
+
+</html>

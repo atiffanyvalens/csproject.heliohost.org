@@ -1,0 +1,115 @@
+
+*{
+
+margin: 20px 0px 20px 10px;
+}
+
+body{
+background-color: dodgerblue;/*change it later at home*/
+
+}
+
+header{
+
+font-size: 16px;
+
+color: white;
+padding: 0px 0px 10px 3px;
+border: 2px solid rgb(255,245,225);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+font-family: Arial Unicode MS;
+
+}
+
+h3{
+font-size: 16px;
+background-color: gold;
+padding: 10px 0px;
+font-family: Verdana;
+border: 2px solid rgb(255,235,205);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+margin-top:40px;
+letter-spacing: 4px;
+
+}
+
+body img{
+border: 2px solid white;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+section p{
+
+font-size: 18px;
+padding: 25px 20px 50px 0px;
+letter-spacing: 2px;
+word-spacing: 2px;
+line-height: 2em;
+margin: 20px 38px 40px 15px;
+color: white;
+border-bottom: 2px solid yellow;
+font-family: Tahoma;
+
+
+}
+
+
+
+section{
+margin: 20px;
+}
+
+
+fieldset{
+
+margin-left: 8px;
+height: 240px;
+border: none;
+
+}
+
+fieldset p{
+font-size: 18px;
+font-weight: bold;
+font-family: Verdana;
+margin: 14px;
+padding-top: 15px;
+padding-bottom: 5px;
+padding-left: 32px;
+color:white;
+letter-spacing: 1px;
+}
+
+
+textarea {
+	display: block;
+	float: left;
+	margin: 1px 45px;
+	height: 100px;
+	width: 72%;	/*width of the field set*/
+	font-size: 18px;
+	font-family: Calibri;
+}
+
+/* scroll*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+

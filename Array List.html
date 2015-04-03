@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>The ArrayList Class</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		
+		<!-- Start css3menu.com  -->
+
+		<link rel="stylesheet" href="INDEX_files/css3menu0/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+		<!-- End css3menu.com  -->
+
+</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+			<div id="header-wrapper">
+			
+			<!-- Start css3menu -->
+
+			<ul id="css3menu0" class="topmenu">
+
+				<li class="topfirst"><a href="index.html" style="height:20px;line-height:20px;">Home</a></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>About</span></a>
+
+					<ul>
+
+						<li><a href="Bio.html">Bio</a></li>
+
+						<li><a href="Resume.html">Resume</a></li>
+					</ul>
+				</li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Time</span></a>
+
+				<ul>
+
+					<li><a href="ClockPage.html">Clock</a></li>
+
+					<li><a href="CalendarPage.html">Calendar</a></li>
+
+					<li><a href="Countdown.html">Countdown</a></li>
+
+				</ul></li>
+
+				<li class="topmenu"><a href="#" style="height:20px;line-height:20px;"><span>Projects</span></a>
+
+				<ul>
+
+					<li><a href="#"><span>Java Codes</span></a>
+
+					<ul>
+
+						<li><a href="Hash Tables.html">Hash Tables</a></li>
+
+						<li><a href="Array List.html">Array List</a></li>
+
+						<li><a href="Linked Lists.html">Linked Lists</a></li>
+
+						<li><a href="Stacks.html">Stacks</a></li>
+
+						<li><a href="Queues.html">Queues</a></li>
+
+						<li><a href="#"><span>Sorting</span></a>
+
+							<ul>
+
+								<li><a href="Bubble Sort.html">Bubble Sort</a></li>
+
+								<li><a href="Selection Sort.html">Selection Sort</a></li>
+
+								<li><a href="Merge Sort.html">Merge Sort</a></li>
+
+								<li><a href="Shell Sort.html">Shell Sort</a></li>
+
+								<li><a href="Heap Sort.html">Heap Sort</a></li>
+
+								<li><a href="Insertion Sort.html">Insertion Sort</a></li>
+								
+								<li><a href="Quick Sort.html">Quick Sort</a></li>
+
+								<li><a href="Radix Sort.html">Radix Sort</a></li>
+
+							</ul>
+						</li>
+
+					</ul></li>
+
+					<li><a href="#"><span>Games</span></a>
+
+					<ul>
+
+						<li><a href="jigsaw puzzle.html">Jigsaw Puzzle</a></li>
+
+						<li><a href="sliding blocks.html">Sliding Blocks</a></li>
+
+						<li><a href="Poker.html">Poker</a></li>
+
+					</ul></li>
+
+			</ul></li>
+
+				<li class="toplast"><a href="csproject_registration_page.php" style="height:20px;line-height:20px;">
+				Sign Up</a></li>
+
+			</ul>
+
+			<!-- End css3menu -->
+
+<header id="header" class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Logo -->
+								<h1><a href="#" id="logo">Tiffany</a></h1>
+							
+							<!-- Nav -->
+							
+
+						</div>
+					</div>
+				</header>
+			</div>
+
+		<!-- Content -->
+			<div id="content-wrapper">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							
+								<!-- Main Content -->
+									<section>
+										<header>
+										<nav class="horizontal">
+												   
+										<ul> 
+										<li style = "float: left; text-align: left; margin: 5px; width: 14%; display: inline; width: 400px; ">
+										<h2>Array List </h2> </li>
+										
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold; border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Hash Tables.html">Hash Tables</a></li>
+										
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Linked Lists.html">Linked Lists</a></li>	
+										
+						
+										<li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Stacks.html">Stacks</a></li>	
+								                <li style = "float: left; margin: 5px; width: 14%; display: inline;font-weight: bold;  border: 1px solid black; border-radius:10px; width: 160px; text-align: center;">
+										<a href="Queues.html">Queues</a></li>  
+										
+										
+								       		</ul>
+										</nav> </br> </br>
+										
+										</header>
+										
+										<p> <font size="4px" face="Calibri">  
+								
+										
+											
+										<div>	
+											
+									
+										
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 200px; text-align: center;">The ArrayList Class</div></br>
+											
+											ArrayList is a class in (the Java API that is similar to an array and allows
+											you to store objects. Unlike an array, an ArrayList object's size is
+											automatically adjusted to accommodate the number of items being stored
+											in it. </br></br>
+											
+											The Java API provides a class named ArrayList, which can be used for storing and retrieving
+											objects. Once you created an ArrayList Object, you can think of it as a container for
+											holding other objects. An ArrayList object is similar to an array of objects, but offers many
+											advantages over an array. Here are a few:</br></br>
+						
+											• An ArrayList object automatically expands as items are added to it. </br>
+											
+											• In addition to adding items to an ArrayList, you can remove items as well. </br>
+				
+											• An ArrayList object automatically shrinks as items are removed from it. </br></br>
+										
+											The ArrayList class is in the java.util package, so the following import statement is
+											required: </br></br>
+					
+											<div style="text-align:center; font-family: Tahoma; font-size: 17px;">import java.util.ArrayList; </div></br>
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 400px; text-align: center;">Creating and Using an ArrayList Object</div></br>
+									
+											Here is an example of how you create an ArrayList object: </br>
+											<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+											ArrayList&lt;String&gt; nameList = new ArrayList&lt;String&gt; (); </div></br>
+											
+											This statement creates a new ArrayList object and stores its address in the nameList
+											variable. Notice that in this example the word String is written inside angled brackets <>
+											immediately after the word ArrayList. This specifies that the ArrayList can hold String
+											objects. If we try to store any other type of object in this ArrayList, an error will occur.
+											(Later in this section, you will see an example that creates an ArrayList for holding other
+											types of objects.) </br></br>
+											
+											To add items to the ArrayList object, you use the add method. For example, the following
+											statements add a series of String objects to nameList:</br>
+											<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+											nameList.add("James"); </br>
+											nameList.add("Catherine"); </br>
+											nameList.add("Bill"); </div></br>
+											
+											After these statements execute, nameList will hold three references to String objects. The
+											first will reference "James", the second will reference "Catherine", and the third will reference 
+											"Bill". </br></br>
+											The items that are stored in an ArrayList have a corresponding index. The index specifies
+											the item's location in the ArrayList, so it is much like an array subscript. The first item that
+											is added to an ArrayList is stored at index 0. The next item that is added to the ArrayList
+											is stored at index 1, and so forth. After the previously shown statements execute, "James"
+											will he stored at index 0, "Catherine" will be stored at index I, and "Bill" will be stored at
+											index 2.</br></br>
+											
+											The ArrayList class has a size method that reports the number of items stored in an
+											ArrayList. It returns the number of items as an int. For example, the following statement
+											uses the method to display the number of items stored in nameList:</br>
+											<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+											System.out.println("The ArrayList has " +
+											nameList.size() +
+											"objects stored in it."); 
+											</div></br>
+											
+											Assuming that nameList holds the Strings "James", "Catherine", and "Bill", the following
+											statement will display: </br><div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+											The ArrayList has 3 objects stored in it. </div></br>
+											
+											The ArrayList class's get method returns the item stored at a specific index. You pass the
+											index as an argument to the method. The example, the following statement will display the
+											item stored at index 1 of nameList: </br>
+											<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+											System.out.println(nameList.get(1)); </div></br>
+											
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 500px; text-align: center;">Using the Enhanced for Loop with an ArrayList </div></br>
+											The enhanced for loop can be used to iterate over each 
+											element in an array. You can also use the enhanced for loop to iterate over each item in an
+											ArrayList.  The enhanced for loop is used to display all of the items stored in the ArrayList as follow: </br>
+														<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+														// Now display the items in nameList. </br>
+														for (String name : nameList) </br>
+														System.out.println(name); </div></br>
+														
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 400px; text-align: center;">The ArrayList Class's toString method</div></br>
+											The ArrayList class has a toString method that returns a string representing all of the
+											items stored in an ArrayList object. For example, suppose we have set up the nameList
+											object as previously shown, with the strings "James", "Catherine", and "Bill". We could
+											use the following statement to display all of the names:</br>
+													<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+													System.out.println(nameList);</div></br>
+											The contents of the ArrayList will be displayed in the following manner:</br>
+													<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+													[James, Catherine, Bill]</div></br>
+													
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 400px; text-align: center;">Removing an Item from an ArrayList</div></br>
+											The ArrayList class has a remove method that removes an item at a specific index. You pass
+											the index as an argument to the method. </br></br>
+											
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 400px; text-align: center;">Inserting an Item </div></br>
+											The add method, as previously shown, adds an item at the last position in an ArrayList
+											object. The ArrayList class has an overloaded version of the add method that allows you to
+											add an item at a specific index. This causes the item to be inserted into the ArrayList object
+											at a specific position. </br></br>
+
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 400px; text-align: center;">Replacing an Item </div></br>
+											The ArrayList class's set method can be used to replace an item at a specific index with
+											another item. For example, the following statement will replace the item currently at index 1
+											with the String "Becky": </br>
+												<div style="text-align:center; font-family: Tahoma; font-size: 17px;"></br>
+												nameList.set(1, "Becky"); </div></br>
+											Note that an error will occur if you specify an invalid index. </br></br>
+											
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 500px; text-align: center;">Using the Diamond Operator for Type Inference (Java 7)</div></br>
+											Beginning with Java 7, you can simplify the instantiation of an ArrayList by using the
+											diamond operator ( <> ). For example, in this chapter you have seen several programs that
+											create an ArrayList object with a statement such as this:</br></br>
+												<div style="text-align:center; font-family: Tahoma; font-size: 17px;">
+												ArrayList&lt;String&gt; list = new ArrayList&lt;String&gt;();</div></br>
+											
+											Notice that the data type (in this case, String) appears between the angled brackets in two
+											locations: first in the part that declares the reference variable, and then again in the part
+											that calls the ArrayList constructor. Beginning with Java 7, you are no longer required to
+											write the data type in the part of the statement that calls the ArrayList constructor. Instead,
+											you can simply write a set of empty angled brackets, as shown here: </br></br>
+												<div style="text-align:center; font-family: Tahoma; font-size: 17px;">
+												ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();</div></br>
+												
+											This set of empty angled brackets ( <> ) is called the diamond operator. It causes the compiler
+											to infer the required data type from the reference variable declaration. Here is another
+											example: </br></br>
+												<div style="text-align:center; font-family: Tahoma; font-size: 17px;">
+												ArrayList&lt;InventoryItem&gt; list = new ArrayList&lt;&gt;(); </div></br>
+												
+											This creates an ArrayList that can hold Inventoryltem objects. Keep in mind that type
+											inference was introduced in Java 7. If you are using an earlier version of the Java language,
+											you will have to use the more lengthy form of the declaration statement to create an
+											ArrayList. </br></br>
+											
+											<div style="font-weight: bold; background-color: #F08080; border-radius:10px; width: 400px; text-align: center;">Example Program </div></br>
+											
+											<div style ="margin-left: 2em; font-size: 17px; border:1px solid;">
+											import java.util.ArrayList; // Needed for ArrayList class </br>
+											</br>
+											//	This program demonstrates an ArrayList </br> </br>
+											public class ArrayListDemo3 </br>
+											{ 
+												<div style ="margin-left: 2em; font-size: 17px;">
+												public static void main(String[] args) </br>
+											    { </br>
+													<div style ="margin-left: 2em; font-size: 18px;">
+													// Create an ArrayList to hold some names. </br>
+													ArrayList<String> nameList = new ArrayList<String>(); </br></br>
+													
+													// Add some names to the ArrayList. </br></br>
+													nameList.add("James"); </br>
+													nameList.add("Catherine"); </br>
+													nameList.add("Bill"); </br></br>
+													
+													// Display the items in nameList and their indices, </br>
+													for (int index = 0; index < nameList.size(); index++) </br>
+													{ </br>
+														<div style ="margin-left: 2em; font-size: 17px;">
+									
+														System.out.println("Index: " + index + " Name: " +
+														nameList.get(index)); </div>
+													} </br></br>
+													
+													// Now remove the item at index 1. </br>
+													nameList.remove(1); </br></br>
+													
+													System.out.println("The item at index 1 is removed. " +
+													"Here are the items now.");</br>
+													// Display the items in nameList and their indices.</br></br>
+
+													for (int index = 0; index < nameList.size(); index++) </br>
+													{ </br>
+														<div style ="margin-left: 2em; font-size: 17px;">
+														System.out.println("Index: " + index + " Name: " +
+														nameList.get(index));  </div>
+													} </div>
+												} </div>
+											} 
+											</div></br>
+											
+											<div style ="margin-left: 2em; font-size: 17px;">
+											Program Output </br>
+											Index: 0 Name: James </br>
+											Index: 1 Name: Catherine </br>
+											Index: 2 Name: Bill</br>
+											The item at index 1 is removed. Here are the items now. </br>
+											Index: 0 Name: James </br>
+											Index: 1 Name: Bill </br></br>
+											</div>
+										</font>
+									</div>
+									</p>
+									<p><div align = "center"><a href="#"> <img src ="images/t2.png"/> </a></div></p>	
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+			</div>
+
+	<!-- Copyright -->
+			<div id="copyright" style="font-size: 18px; height: 0px;" >
+				&copy; Untitled. All rights reserved. | Tiffany </a> | CS 599 - Final Project 2014
+			</div>
+
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+   <!--
+   
+      Author:  Anastasia Tiffany Valens
+      Date:	September 9, 2013
+	  
+	-->
+	  
+	  <meta content="text/html; charset=UTF-8" http-equiv="content-type"  />
+	  <meta name="author" content="Anastasia Tiffany Valens"/> 
+	  <meta name="description" content="Travel Recommendations" />
+	  <meta name="keywords" content="travel, top destinations, USA" />
+	  <script src="modernizr-1.5.js"></script> 
+      <script src="formsubmit.js"></script>
+      <title>Travel</title><!--title of web browser-->
+      <link href="index.css" rel="stylesheet" type="text/css"/> 
+</head>
+
+<div id="wrapper">
+<body>
+
+<form id="login" name="login" action="homepage.html" method="post">	
+		<fieldset id="login">
+			
+			<!--5. Create input boxes-->
+			<!--10. All the fields within the billing field set marked as required fields except
+			the street2 field-->
+			<input name="email" id="email" placeholder="Email" type="email" required="required"/> 
+			<input name="password" id="password" placeholder="Password" pattern="^(?=.*\d).{4,15}$" required="required"/>
+			<!--regex pattern from internet: password must be between 4 and 15 digits long and include 
+			at least one numeric digit-->	
+			
+				
+			<hgroup>		
+			<h5><a href="#">Register Now ></a></h5>		
+			<h5><a href="#">Forgot Login ></a></h5>
+			<h5><a href="index.html">Back to Top ></a></h5>
+			</hgroup>
+			
+			<!--Insert a submit button At the bottom of the form,-->
+			<p>
+			<input type="submit" value="LOG IN"/>
+			</p>
+			
+		</fieldset>
+		</form>
+</body>
+</html>
